@@ -21,6 +21,11 @@
 
 ## 泛化关系（Generalization）
 泛化关系使用一条带有空心箭头的直线表示：
+::: hljs-center
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562660725375-1562660725381.png)
+
+:::
 
 
 
