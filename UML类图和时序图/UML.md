@@ -77,7 +77,7 @@
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562663027115-1562663027121.png)
 
-:::
+</div>
 
 ## 依赖关系（Dependency）
 
