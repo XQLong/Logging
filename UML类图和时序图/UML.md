@@ -52,7 +52,12 @@
 
 组合关系用一条带实心菱形箭头的直线表示：
 
+::: hljs-center
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562662348681-1562662348690.png)
+
+:::
+如图所示，表示A
 
 
 
