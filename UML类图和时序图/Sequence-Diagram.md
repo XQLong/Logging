@@ -1,3 +1,3 @@
 # 时序图
 
-时序图（Sequence Diagram）
+时序图（Sequence Diagram）是显示对象之间交互的图，这些对象是按时间顺序排列的。时序图中显示的
