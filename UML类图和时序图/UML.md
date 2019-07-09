@@ -80,7 +80,7 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562664335597-1562664335603.png)
 
 :::
-如图所示，表示A依赖于B
+如图所示，表示A依赖于B，它描述一个对象在运行期间会用到另一个对象的关系。
 
 
 
