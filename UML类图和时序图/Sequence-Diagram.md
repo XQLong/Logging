@@ -27,4 +27,12 @@
 
 ### 2、生命线
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562678953763-1562678953770.png)
+
+</div>
+
+生命线是一条垂直的虚线，生命线往往
+
 
