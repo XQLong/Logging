@@ -21,6 +21,7 @@
 
 ## 泛化关系（Generalization）
 泛化关系使用一条带有空心箭头的直线表示：
+
 ::: hljs-center
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562660725375-1562660725381.png)
@@ -31,21 +32,25 @@
 
 ## 实现关系（Realize）
 实现关系用带空心箭头的虚线表示：
+
 ::: hljs-center
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661515312-1562661515317.png)
 
 :::
+
 车为一个抽象的概念，在现实中无法直接用来定义对象；只有指明具体子类（如汽车或是自行车），才可以用来定义对象（即表现在最终的代码上，实现关系表现为继承抽象类）。
 
 ## 聚合关系（Aggregation）
 
 聚合关系用一条带空心菱形的实线来表示：
+
 ::: hljs-center
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661881106-1562661881119.png)
 
 :::
+
 如图所示表示A聚合到B上，或者说B由A组成。聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义，如上面提到的学生和班级之间为聚合关系。
 
 ## 组合关系（Composition）
@@ -57,6 +62,7 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562662348681-1562662348690.png)
 
 :::
+
 如图所示，表示A组成B，或者说B由A组成。
 
 组合关系同样用来表示整体由部分构成的语义，如车和发动机的关系。不同的是聚合关系表示的整体和部分之间不是强依赖的，而组合关系的部分和整体之间则是强依赖的。如部门和人员之间是聚合关系，部门撤销了，人员不会消失；而公司和部门则是组合关系，公司不存在了，部门也会消失。
