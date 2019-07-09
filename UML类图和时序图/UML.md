@@ -22,22 +22,22 @@
 ## 泛化关系（Generalization）
 泛化关系使用一条带有空心箭头的直线表示：
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562660725375-1562660725381.png)
 
-:::
+</div>
 
 汽车和SUV之间是泛化关系。汽车在现实中有实现，可用汽车定义具体的对象（即最终表现在代码上，泛化关系表现为继承非抽象类）。
 
 ## 实现关系（Realize）
 实现关系用带空心箭头的虚线表示：
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661515312-1562661515317.png)
 
-:::
+</div>
 
 车为一个抽象的概念，在现实中无法直接用来定义对象；只有指明具体子类（如汽车或是自行车），才可以用来定义对象（即表现在最终的代码上，实现关系表现为继承抽象类）。
 
@@ -45,11 +45,11 @@
 
 聚合关系用一条带空心菱形的实线来表示：
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661881106-1562661881119.png)
 
-:::
+</div>
 
 如图所示表示A聚合到B上，或者说B由A组成。聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义，如上面提到的学生和班级之间为聚合关系。
 
@@ -57,11 +57,11 @@
 
 组合关系用一条带实心菱形箭头的直线表示：
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562662348681-1562662348690.png)
 
-:::
+</div>
 
 如图所示，表示A组成B，或者说B由A组成。
 
@@ -87,7 +87,7 @@
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562664335597-1562664335603.png)
 
-:::
+</div>
 
 如图所示，表示A依赖于B，它描述一个对象在运行期间会用到另一个对象的关系。
 
