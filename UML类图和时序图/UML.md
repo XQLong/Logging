@@ -40,7 +40,13 @@
 
 ## 聚合关系
 
-聚合关系用一条带空心菱形的
+聚合关系用一条带空心菱形的实线来表示：
+::: hljs-center
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661881106-1562661881119.png)
+
+:::
+如图所示表示A聚合到B上，或者说
 
 
 
