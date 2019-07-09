@@ -39,4 +39,9 @@
 
 焦点控制也称激活期，表示对象执行相应操作的时间段。在UML图中，激活期使用位于对象生命线上的小矩形表示，这个小矩形也被称为激活条。
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680000362-1562680000368.png)
+
+</div>
 
