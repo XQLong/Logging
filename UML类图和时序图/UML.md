@@ -36,7 +36,7 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562661515312-1562661515317.png)
 
 :::
-
+车为一个抽象的概念，在现实中无法直接用来定义对象；只有指明具体子类（如）
 
 
 
