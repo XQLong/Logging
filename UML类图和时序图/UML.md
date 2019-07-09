@@ -73,7 +73,7 @@
 
 关联关系默认不强调方向，表示对象间相互知道；如果特别强调方向，如下图，表示A知道B，但 B不知道A（在最终代码中，关联对象往往是以成员变量的形式实现的）。
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562663027115-1562663027121.png)
 
