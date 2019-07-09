@@ -83,7 +83,7 @@
 
 依赖关系使用一条带箭头的虚线表示：
 
-::: hljs-center
+<div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562664335597-1562664335603.png)
 
