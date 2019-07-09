@@ -17,8 +17,11 @@
 
 # 类之间的关系
 
+类的继承结构表现在UML中为：泛化（generalization）与实现(realize):
+
 ## 泛化关系（Generalization）
-类的继承结构表现在UML中为：泛化（）与实现
+
+
 
 
 
