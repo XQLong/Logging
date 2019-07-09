@@ -61,3 +61,11 @@
 
 在时序图中，通过不同的图标可以标识不同的消息特征。这些特征主要包括异步、同步、返回、自身等：
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562682483964-1562682483969.png)
+
+</div>
+
+- 异步消息
+
