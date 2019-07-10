@@ -28,12 +28,19 @@
 ### 1.5 代码示例
 
 - 创建抽象产品类（抽象类）：
+::: hljs-center
+
 
 ```
 public interface Product {
 }
 ```
+
+:::
+
 - 创建具体产品类：
+::: hljs-center
+
 
 ```
 public class ConcreteProduct1 implements Product {
@@ -43,8 +50,13 @@ public class ConcreteProduct1 implements Product {
 public class ConcreteProduct1 implements Product {
 }
 ```
+
+:::
+
 
 - 创建工厂类来生成对象：
+
+::: hljs-center
 
 ```
 public class SimpleFactory {
@@ -60,6 +72,9 @@ public class SimpleFactory {
 }
 ```
 
+:::
+
+
 - 在客户端使用工厂类创建对象：
 
 ```
@@ -70,8 +85,8 @@ public class Client {
         //use product of type 1
     }
 }
-
 ```
+
 ### 1.4 模式优缺点
 
 优点：
