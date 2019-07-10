@@ -23,4 +23,4 @@
 
 </div>
 
-如图所示，简单工厂模式主要包括工厂（Factory）、具体产品（ConcretProduct）、抽象产品
+如图所示，简单工厂模式主要包括工厂（Factory）、具体产品（ConcretProduct）、抽象产品（Product）三个角色。工厂角色负责实现创造所有实例的内部结构
