@@ -12,5 +12,5 @@
 
 ### 1、简单工厂模式（Simply Factory Pattern）
 
-简单工厂模式又称静态工厂方法（Static Factory method）
+简单工厂模式又称静态工厂方法（Static Factory Method）模式，属于类创建模式。在简单工厂模式中，可以根据参数的不同返回不同的类的实例。
 
