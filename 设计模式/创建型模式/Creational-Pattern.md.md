@@ -46,11 +46,32 @@ public class ConcreteProduct1 implements Product {
 
 - 创建工厂类来生成对象：
 
-
+```
+public class SimpleFactory {
+    public Product createProduct(int type){
+        if(type==1){
+            return new ConcreteProduct1();
+        }else if(type==1){
+            return new ConcreteProduct2();
+        }else {
+            return new ConcreteProduct3();
+        }
+    }
+}
+```
 
 - 在客户端使用工厂类创建对象：
 
+```
+public class Client {
+    public static void main(String[] args){
+        SimpleFactory sf = new SimpleFactory();
+        Product product = sf.createProduct(1);
+        //use product of type 1
+    }
+}
 
+```
 ### 1.4 模式优缺点
 
 优点：
