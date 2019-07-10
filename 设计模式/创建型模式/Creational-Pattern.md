@@ -191,4 +191,10 @@ public class Client {
 
 ## 3.2模式结构
 
-抽象工厂模式包含的角色有：抽象工厂（AbstractFactory）、具体工厂（ConcreteFactory）、抽象产品（AbstractProduct）、具体产品（）
+抽象工厂模式包含的角色有：抽象工厂（AbstractFactory）、具体工厂（ConcreteFactory）、抽象产品（AbstractProduct）、具体产品（Product），如下图所示：
+
+<div align="center">
+
+
+
+</div>
