@@ -63,7 +63,7 @@
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562682483964-1562682483969.png)
+![message type](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562682483964-1562682483969.png)
 
 </div>
 
