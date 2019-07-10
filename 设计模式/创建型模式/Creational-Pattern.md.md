@@ -24,7 +24,9 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/10/1562729479420-1562729479424.png)
 
 </div>
-### 1.5 代码
+### 1.5 代码示例
+- 创建抽象产品类：
+- 创建聚类
 
 
 ### 1.4 模式优缺点
