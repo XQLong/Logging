@@ -30,3 +30,5 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/10/1562729479420-1562729479424.png)
 
 </div>
+
+#### 1.3 模式优缺点
