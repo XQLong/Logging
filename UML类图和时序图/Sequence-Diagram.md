@@ -29,7 +29,7 @@
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562678953763-1562678953770.png)
+![lifeline](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562678953763-1562678953770.png)
 
 </div>
 
@@ -41,7 +41,7 @@
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680000362-1562680000368.png)
+![focus control](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680000362-1562680000368.png)
 
 </div>
 
