@@ -185,7 +185,7 @@ public class Client {
 
 ### 3.抽象工厂模式（Abstract Factory）
 
-## 3.1模式
-
+## 3.1模式定义
+抽象工厂模式：
 
 
