@@ -41,7 +41,7 @@
 
 <div align="center">
 
-![focus control](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680000362-1562680000368.png)
+![Focus of control](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680000362-1562680000368.png)
 
 </div>
 
@@ -53,7 +53,7 @@
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680522391-1562680522397.png)
+![message](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/09/1562680522391-1562680522397.png)
 
 </div>
 
@@ -74,6 +74,9 @@
 
 了解了时序图的基本组成元素之后，下面给出一个简单的应用实例：
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/10/1562723428448-1562723428456.png)
+<div align="center">
 
+![example](https://raw.githubusercontent.com/XQLong/Logging/master/gitnote/2019/07/10/1562723428448-1562723428456.png)
+
+</div>
 
