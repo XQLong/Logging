@@ -24,7 +24,9 @@
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/10/1562729479420-1562729479424.png)
 
 </div>
+
 ### 1.5 代码示例
+
 - 创建抽象产品类（抽象类）：
 
 ```
@@ -43,6 +45,9 @@ public class ConcreteProduct1 implements Product {
 ```
 
 - 创建工厂类来生成对象：
+
+
+
 - 在客户端使用工厂类创建对象：
 
 
