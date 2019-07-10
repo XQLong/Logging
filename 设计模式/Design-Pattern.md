@@ -17,5 +17,6 @@
 
 #### 1.2模式结构
 
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/10/1562728646127-1562728646133.png)
 
