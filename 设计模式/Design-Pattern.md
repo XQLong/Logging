@@ -24,3 +24,9 @@
 </div>
 
 如图所示，简单工厂模式主要包括**工厂（Factory）**、**具体产品（ConcretProduct）**、**抽象产品（Product）** 三个角色。工厂角色负责实现创造所有实例的内部逻辑；具体产品角色是创建目标，所有创建的对象都充当这个角色的每个具体实例；抽象产品角色是所创建的所有对象的父类，负责描述所有实例所有的公共接口。
+
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/10/1562729479420-1562729479424.png)
+
+</div>
