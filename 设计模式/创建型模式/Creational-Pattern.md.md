@@ -33,7 +33,14 @@ public interface Product {
 ```
 - 创建具体产品类：
 
-
+```
+public class ConcreteProduct1 implements Product {
+}
+public class ConcreteProduct1 implements Product {
+}
+public class ConcreteProduct1 implements Product {
+}
+```
 
 - 创建工厂类来生成对象：
 - 在客户端使用工厂类创建对象：
