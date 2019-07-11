@@ -547,7 +547,27 @@ public class Singleton3 {
 
 使用synchronized关键字进行同步公共静态方法getUniqueSingleton3，从而保证线程安全。
 
-- 双重校验锁懒汉式（）
+- 双重校验锁懒汉式（线程安全）
+
+```
+public class Singleton4 {
+    private volatile static Singleton4 uniqueSingleton4;
+    private Singleton4(){};
+    public static Singleton4 getUniqueSingleton4(){
+        if(uniqueSingleton4==null){
+            synchronized (Singleton4.class){
+                if(uniqueSingleton4==null){
+                    uniqueSingleton4 = new Singleton4();
+                }
+            }
+        }
+        return uniqueSingleton4;
+    }
+}
+
+```
+
+
 
 
 
