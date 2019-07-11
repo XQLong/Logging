@@ -472,6 +472,8 @@ public class Client {
 
 ### 5.2模式结构
 
+单例模式包含的角色主要为：单例（Singleton）。单例模式结构类图
+
 
 
 
