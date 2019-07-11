@@ -430,7 +430,25 @@ public class Director {
 }
 ```
 
-如代码所示，指挥者类首先利用构造函数初始化指挥者类中的建造者，然后利用它来建造具体的产品（套餐）
+如代码所示，指挥者类首先利用构造函数初始化指挥者类中的建造者，然后利用它来建造具体的产品（套餐）。
+
+- 在客户端中使用：
+
+public class Client {
+    public static void main(String[] args){
+        /*使用建造者模式*/
+
+        //创建汉堡加可口可乐的套餐A
+        Builder builderA = new ConcreteBuilderA();
+        Director director = new Director(builderA);
+        Meal mealA = director.buildMeal();
+        //创建汉堡加可口可乐的套餐A
+        Builder builderB = new ConcreteBuilderA();
+        director = new Director(builderB);
+        Meal mealB = director.buildMeal();
+    }
+}
+
 
 
 
