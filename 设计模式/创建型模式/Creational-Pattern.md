@@ -527,7 +527,7 @@ public class Singleton2 {
 
 ```
 
-直接实例化
+直接讲私有静态变量 uniqueInstance 实例化，这样便不会产生线程安全的问题
 
 
 
