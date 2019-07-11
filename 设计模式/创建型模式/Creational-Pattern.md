@@ -195,6 +195,8 @@ public class Client {
 
 <div align="center">
 
-
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/11/1562811411788-1562811412304.png)
 
 </div>
+
+可以看到在抽象工厂
