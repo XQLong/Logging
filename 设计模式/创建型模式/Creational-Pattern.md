@@ -228,9 +228,21 @@ public class ConcreteProductB1 implements ProductB {
 public class ConcreteProductB2 implements ProductB {
 }
 ```
-
 </div>
 
 如上代码所示创建了两个不同的具体产品等级ConcreteProductA和ConcreteProductB。
 
-- 创建抽象工厂类
+- 创建抽象工厂类：
+
+<div align="center">
+
+```
+abstract public class AbstractFactory {
+    abstract ProductA createProductA();
+    abstract ProductB createProductB();
+}
+```
+
+</div>
+
+如上代码所示
