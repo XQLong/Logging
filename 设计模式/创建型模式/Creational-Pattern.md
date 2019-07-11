@@ -207,13 +207,17 @@ public class Client {
 
 <div align="center">
 ```
+public interface ProductA {
+}
 public interface ProductB {
 }
 ```
 </div>
 
+- 创建不同产品等级的具体产品类：
+
+<div align="center">
 
 
 
-
- 
+</div>
