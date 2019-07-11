@@ -203,7 +203,16 @@ public class Client {
 
 ### 3.3代码示例
 
-- 创建不同
+- 创建不同产品等级的产品抽象类：
+
+<div align="center">
+```
+public interface ProductB {
+}
+```
+</div>
+
+
 
 
 
