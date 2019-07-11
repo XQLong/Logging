@@ -320,10 +320,11 @@ public class Client {
 
 <div align="center">
 
-
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/11/1562828060455-1562828060463.png)
 
 </div>
 
+如图所示，抽象创建
 
 
 
