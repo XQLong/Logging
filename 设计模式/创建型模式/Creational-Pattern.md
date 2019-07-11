@@ -434,6 +434,7 @@ public class Director {
 
 - 在客户端中使用：
 
+```
 public class Client {
     public static void main(String[] args){
         /*使用建造者模式*/
@@ -448,6 +449,9 @@ public class Client {
         Meal mealB = director.buildMeal();
     }
 }
+```
+
+
 
 
 
