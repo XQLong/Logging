@@ -569,7 +569,22 @@ public class Singleton4 {
 
 ```
 
-uniqueInstance 只需要被实例化一次，之后就可以直接使用了。加锁操作只需要对实例化那部分的代码进行，只有当 uniqueInstance 没有被实例化时，才需要进行加锁。双重校验锁先判断 uniqueInstance 是否已经被实例化，如果没有被实例化，那么才对实例化语句进行加锁。
+uniqueInstance 只需要被实例化一次，之后就可以直接使用了。加锁操作只需要对实例化那部分的代码进行，只有当 uniqueInstance 没有被实例化时，才需要进行加锁。双重校验锁先判断 uniqueInstance 是否已经被实例化，如果没有被实例化，那么才对实例化语句进行加锁。使用 volatile 可以禁止 JVM 的指令重排，保证在多线程环境下也能正常运行。
+
+- 静态内部类实现
+
+
+public class Singleton5 {
+    private Singleton5(){}
+    private static class SingletonHolder{
+        private static final Singleton5 INSTANCE = new Singleton5();
+    }
+    public static Singleton5 getUniqueInstance() {
+        return SingletonHolder.INSTANCE;
+    }
+}
+
+
 
 
 
