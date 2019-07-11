@@ -251,6 +251,30 @@ abstract public class AbstractFactory {
 
 <div align="center">
 
+```
+public class ConcreteAbstractFactory1 extends AbstractFactory{
+    @Override
+    ProductA createProductA() {
+        return new ConcreteProductA1();
+    }
+
+    @Override
+    ProductB createProductB() {
+        return new ConcreteProductB1();
+    }
+}
+public class ConcreteAbstractFactory2 extends AbstractFactory{
+    @Override
+    ProductA createProductA() {
+        return new ConcreteProductA2();
+    }
+
+    @Override
+    ProductB createProductB() {
+        return new ConcreteProductB2();
+    }
+}
+```
 
 
 </div>
