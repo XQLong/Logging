@@ -364,7 +364,17 @@ public class Meal {
 }
 ```
 
-- 创建抽象
+- 创建抽象建造者类:
+
+```
+abstract public class Builder {
+    abstract void createFood();
+    abstract void createDrink();
+    abstract Meal getMeal();
+}
+```
+
+
 
 
 
