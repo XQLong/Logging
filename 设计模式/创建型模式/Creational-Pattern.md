@@ -245,4 +245,8 @@ abstract public class AbstractFactory {
 
 </div>
 
-如上代码所示抽象工厂类AbstractFactory中定义了createProductA和createProductB两个抽象方法，子类通过实现这两个方法来创建两个不同产品等级（ProductA和ProductB）
+如上代码所示抽象工厂类AbstractFactory中定义了createProductA和createProductB两个抽象方法，子类（具体工厂类）通过实现这两个方法来创建两个不同产品等级（ProductA和ProductB）的具体产品。
+
+- 创建具体工厂类：
+
+<div align="center">
