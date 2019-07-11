@@ -328,7 +328,7 @@ public class Client {
 
 ### 4.2模式结构
 
-建造者模式主要包含抽象建造者（Builder）、具体建造者（ConcreteBuilder）、指挥者（Director）、产品（Product）
+建造者模式主要包含抽象建造者（Builder）、具体建造者（ConcreteBuilder）、指挥者（Director）、产品（Product）四个角色。建造者模式类图如下：
 
 
 
