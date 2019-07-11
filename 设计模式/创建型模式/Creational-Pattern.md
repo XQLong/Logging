@@ -205,18 +205,15 @@ public class Client {
 
 - 创建不同产品等级的产品抽象类：
 
-<div align="center">
 ```
 public interface ProductA {
 }
 public interface ProductB {
 }
 ```
-</div>
 
 - 创建不同产品等级的具体产品类：
 
-<div align="center">
 
 ```
 public class ConcreteProductA1 implements ProductA {
@@ -228,7 +225,6 @@ public class ConcreteProductB1 implements ProductB {
 public class ConcreteProductB2 implements ProductB {
 }
 ```
-</div>
 
 如上代码所示创建了两个不同的具体产品等级ConcreteProductA和ConcreteProductB。
 
