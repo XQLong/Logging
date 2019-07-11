@@ -245,4 +245,4 @@ abstract public class AbstractFactory {
 
 </div>
 
-如上代码所示
+如上代码所示抽象工厂类AbstractFactory中定义了createProductA和createProductB两个抽象方法，子类通过
