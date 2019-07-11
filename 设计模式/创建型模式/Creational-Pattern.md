@@ -414,6 +414,26 @@ public class ConcreteBuilderB extends Builder{
 
 如代码所示，两个具体建造者类分别用来创建两种不同的套餐（A和B）。
 
+- 指挥者类：
+
+```
+public class Director {
+    private Builder builder;
+    public Director(Builder builder){
+        this.builder = builder;
+    }
+    public Meal buildMeal(){
+        builder.createFood();
+        builder.createDrink();
+        return builder.getMeal();
+    }
+}
+```
+
+
+
+
+
 
 
 
