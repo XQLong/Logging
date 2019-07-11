@@ -412,7 +412,8 @@ public class ConcreteBuilderB extends Builder{
 }
 ```
 
-如代码所示，两个具体建造者类分别用来创建两种
+如代码所示，两个具体建造者类分别用来创建两种不同的套餐（A和B）。
+
 
 
 
