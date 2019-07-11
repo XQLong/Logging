@@ -509,7 +509,27 @@ public class Singleton1 {
 ```
 懒汉式实现方式中，私有静态变量uniqueInstance被延迟实例化，这样当没有用到该类时就不会被实例化，从而节约了资源。这个实现在多线程的情况下是不安全的如果多个线程能够同时进入 if (uniqueInstance == null) ，并且此时 uniqueInstance 为 null，那么会有多个线程执行 uniqueInstance = new Singleton(); 语句，这将导致实例化多次 uniqueInstance。
 
-- 
+- 饿汉式
+
+
+```
+public class Singleton2 {
+    //饿汉式
+    private static Singleton2 uniqueInstance = new Singleton2();
+    private Singleton2(){}
+    public static Singleton2 getUniqueInstance(){
+        return uniqueInstance;
+    }
+    public void testPrint(){
+        System.out.println("ok");
+    }
+}
+
+```
+
+直接实例化
+
+
 
 
 
