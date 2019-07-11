@@ -342,7 +342,31 @@ public class Client {
 
 </div>
 
-- 创建建造者模式的产品类，对应在本例中即为套餐类
+- 创建建造者模式的产品类，对应在本例中即为套餐类：
+
+```
+public class Meal {
+    //套餐内包含食物和饮料
+    private String food;
+    private String drink;
+    public void setFood(String food) {
+        this.food = food;
+    }
+    public void setDrink(String drink) {
+        this.drink = drink;
+    }
+    public String getFood() {
+        return food;
+    }
+    public String getDrink() {
+        return drink;
+    }
+}
+```
+
+- 创建抽象
+
+
 
 
 
