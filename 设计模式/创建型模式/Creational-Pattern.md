@@ -276,5 +276,6 @@ public class ConcreteAbstractFactory2 extends AbstractFactory{
 }
 ```
 
-
 </div>
+
+如上代码所示具体工厂类ConcreteAbstractFactory1 创建了两个不同产品等级的
