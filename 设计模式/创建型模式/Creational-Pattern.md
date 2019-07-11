@@ -507,6 +507,7 @@ public class Singleton1 {
     }
 }
 ```
+懒汉式实现方式中
 
 - 
 
