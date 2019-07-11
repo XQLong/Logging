@@ -280,4 +280,5 @@ public class ConcreteAbstractFactory2 extends AbstractFactory{
 
 如上代码所示具体工厂类ConcreteAbstractFactory1创建了两个不同产品等级的具体产品，ConcreteAbstractFactory2 同样也是。
 
-- 在客户端中
+- 在客户端中使用产品：
+- 
