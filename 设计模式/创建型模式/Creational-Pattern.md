@@ -240,6 +240,14 @@ public class ConcreteProductB2 implements ProductB {
 abstract public class AbstractFactory {
     abstract ProductA createProductA();
     abstract ProductB createProductB();
+    public void doSomethingWithA(){
+        ProductA productA = createProductA();
+        //do something with ProductA
+    }
+    public void doSomethingWithB(){
+        ProductB productB = createProductB();
+        //do something with ProductB
+    }
 }
 ```
 
