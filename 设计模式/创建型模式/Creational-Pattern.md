@@ -228,6 +228,6 @@ public class ConcreteProductB1 implements ProductB {
 public class ConcreteProductB2 implements ProductB {
 }
 ```
-如上
+如上代码所示创建了两个不同的具体产品等级ConcreteProductA和ConcreteProductB。
 
 </div>
