@@ -219,8 +219,15 @@ public interface ProductB {
 <div align="center">
 
 ```
-
+public class ConcreteProductA1 implements ProductA {
+}
+public class ConcreteProductA2 implements ProductA {
+}
+public class ConcreteProductB1 implements ProductB {
+}
+public class ConcreteProductB2 implements ProductB {
+}
 ```
-
+如上
 
 </div>
