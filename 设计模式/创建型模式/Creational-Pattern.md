@@ -476,9 +476,11 @@ public class Client {
 
 <div align="center">
 
-
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/11/1562848464265-1562848464269.png)
 
 </div>
+
+单例模式的目的是保证一个类仅有一个实例，并提供一个访问它的全局访问点。
 
 
 
