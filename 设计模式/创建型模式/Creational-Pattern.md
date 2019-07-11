@@ -342,7 +342,7 @@ public class Client {
 
 </div>
 
-- 创建建造者模式的产品类，对应在本例中即为套餐类：
+- 建造者模式的产品类，对应在本例中即为套餐类：
 
 ```
 public class Meal {
@@ -364,7 +364,7 @@ public class Meal {
 }
 ```
 
-- 创建抽象建造者类:
+- 抽象建造者类:
 
 ```
 abstract public class Builder {
@@ -373,6 +373,24 @@ abstract public class Builder {
     abstract Meal getMeal();
 }
 ```
+
+- 具体建造者类：
+
+public class ConcreteBuilderA extends Builder{
+    private Meal meal = new Meal();
+    @Override
+    void createFood() {
+        meal.setFood("hamburger");
+    }
+    @Override
+    void createDrink() {
+        meal.setDrink("Coco cola");
+    }
+    @Override
+    Meal getMeal() {
+        return meal;
+    }
+}
 
 
 
