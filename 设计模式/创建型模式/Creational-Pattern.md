@@ -376,6 +376,7 @@ abstract public class Builder {
 
 - 具体建造者类：
 
+```
 public class ConcreteBuilderA extends Builder{
     private Meal meal = new Meal();
     @Override
@@ -391,6 +392,28 @@ public class ConcreteBuilderA extends Builder{
         return meal;
     }
 }
+
+public class ConcreteBuilderB extends Builder{
+    private Meal meal = new Meal();
+    @Override
+    void createFood() {
+        meal.setFood("french fries");
+    }
+
+    @Override
+    void createDrink() {
+        meal.setDrink("Pepsi cola");
+    }
+
+    @Override
+    Meal getMeal() {
+        return meal;
+    }
+}
+```
+
+如代码所示，两个具体建造者类分别用来创建两种
+
 
 
 
