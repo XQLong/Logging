@@ -289,4 +289,17 @@ public class ConcreteAbstractFactory2 extends AbstractFactory{
 如上代码所示具体工厂类ConcreteAbstractFactory1创建了两个不同产品等级的具体产品，ConcreteAbstractFactory2 同样也是。
 
 - 在客户端中使用产品：
-- 
+
+<div align="center">
+```
+public class Client {
+    public static void main(String[] args){
+        /*使用抽象工厂模式*/
+        AbstractFactory af = new ConcreteAbstractFactory1();
+        af.doSomethingWithA();
+        af.doSomethingWithB();
+    }
+}
+```
+
+</div>
