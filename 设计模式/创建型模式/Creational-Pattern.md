@@ -234,7 +234,6 @@ public class ConcreteProductB2 implements ProductB {
 
 - 创建抽象工厂类：
 
-<div align="center">
 
 ```
 abstract public class AbstractFactory {
@@ -251,8 +250,6 @@ abstract public class AbstractFactory {
 }
 ```
 
-</div>
-
 如上代码所示抽象工厂类AbstractFactory中定义了createProductA和createProductB两个抽象方法，子类（具体工厂类）通过实现这两个方法来创建两个不同产品等级（ProductA和ProductB）的具体产品。抽象工厂模式的时序图如下：
 
 <div align="center">
@@ -263,7 +260,6 @@ abstract public class AbstractFactory {
 
 - 创建具体工厂类：
 
-<div align="center">
 
 ```
 public class ConcreteAbstractFactory1 extends AbstractFactory{
@@ -290,13 +286,10 @@ public class ConcreteAbstractFactory2 extends AbstractFactory{
 }
 ```
 
-</div>
-
 如上代码所示具体工厂类ConcreteAbstractFactory1创建了两个不同产品等级的具体产品，ConcreteAbstractFactory2 同样也是。
 
 - 在客户端中使用产品：
 
-<div align="center">
 ```
 public class Client {
     public static void main(String[] args){
@@ -307,7 +300,6 @@ public class Client {
     }
 }
 ```
-</div>
 
 ### 3.4模式优缺点
 抽象工厂模式的主要优点是：
@@ -329,6 +321,12 @@ public class Client {
 ### 4.2模式结构
 
 建造者模式主要包含抽象建造者（Builder）、具体建造者（ConcreteBuilder）、指挥者（Director）、产品（Product）四个角色。建造者模式类图如下：
+
+<div align="center">
+
+
+
+</div>
 
 
 
