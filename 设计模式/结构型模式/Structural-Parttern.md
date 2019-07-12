@@ -32,7 +32,8 @@
 - 类适配器模式
 
 
-目标类
+目标类（所期待得到的接口）:
+
 ```
 public interface Target {
     /*源类Adaptee中有的方法*/
@@ -43,5 +44,8 @@ public interface Target {
 }
 
 ```
+
+源类(需要适配的接口):
+
 
 
