@@ -103,6 +103,7 @@ public class Adaptee {
 ```
 
 适配器类：
+
 ```
 public class Adapter_Obj implements Target{
     private Adaptee adaptee;
