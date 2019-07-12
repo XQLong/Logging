@@ -587,7 +587,7 @@ public class Singleton5 {
 
 当 Singleton 类被加载时，静态内部类 SingletonHolder 没有被加载进内存。只有当调用 getUniqueInstance() 方法从而触发 SingletonHolder.INSTANCE 时 SingletonHolder 才会被加载，此时初始化 INSTANCE 实例，并且 JVM 能确保 INSTANCE 只被实例化一次。这种方式不仅具有延迟初始化的好处，而且由 JVM 提供了对线程安全的支持。
 
-### 5.4模式优缺点：
+### 5.4模式优缺点
 
 - 单例模式的主要优点在于提供了对唯一实例的受控访问并可以节约系统资源；
 - 其主要缺点在于因为缺少抽象层而难以扩展，且单例类职责过重。
