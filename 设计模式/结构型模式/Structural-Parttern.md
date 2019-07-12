@@ -25,6 +25,8 @@
 
 在上图中可以看出，Adaptee类并没有sampleOperation2()方法，而客户端则期待这个方法。为使客户端能够使用Adaptee类，提供一个中间环节，即类Adapter，把Adaptee的API与Target类的API衔接起来。Adapter与Adaptee是继承关系，这决定了这个适配器模式是类的。模式中所涉及到的角色主要包括目标(Target)、源（Adaptee）、适配器（Adapter）三个角色：目标就是所期待得到的接口；源就是需要适配的接口；适配器把源接口转换成目标接口。
 
+- 
+
 - 对象适配器模式
 
 ### 1.3代码示例
