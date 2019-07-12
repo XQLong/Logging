@@ -80,7 +80,7 @@ public class Adapter extends Adaptee implements Target{
 
 
 
-目标类与类适配器模式（所期待得到的接口）:
+目标类与类适配器模式相同（所期待得到的接口）:
 
 ```
 public interface Target {
