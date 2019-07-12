@@ -102,7 +102,7 @@ public class Adaptee {
 }
 ```
 
-
+适配器类：
 
 
 
