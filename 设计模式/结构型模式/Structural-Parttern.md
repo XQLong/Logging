@@ -29,6 +29,19 @@
 
 ### 1.3代码示例
 
-- 类适配器模式：
+- 类适配器模式
+
+
+目标类
+```
+public interface Target {
+    /*源类Adaptee中有的方法*/
+    public void sampleOperation1();
+
+    /*源类Adaptee中没有的方法*/
+    public void sampleOperation2();
+}
+
+```
 
 
