@@ -124,6 +124,7 @@ public class Adapter_Obj implements Target{
 
 ```
 
+1
 
 
 
