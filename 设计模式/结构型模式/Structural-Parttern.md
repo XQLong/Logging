@@ -124,6 +124,8 @@ public class Adapter_Obj implements Target{
 
 ```
 
+### 1.4模式优缺点
+
 
 
 
