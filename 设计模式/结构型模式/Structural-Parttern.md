@@ -15,6 +15,10 @@
 
 - 类适配器模式
 
-类的适配器模式把适配的类的API转换成为目标类的API
+类的适配器模式把适配的类的API转换成为目标类的API。其结构图如下：
+
+<div align="center">
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/12/1562898115905-1562898116113.png)
+</div>
 
 - 对象适配器模式
