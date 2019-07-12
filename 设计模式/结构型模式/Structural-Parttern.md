@@ -47,5 +47,24 @@ public interface Target {
 
 源类(需要适配的接口):
 
+```
+public class Adaptee {
+    public void sampleOperation1(){}
+}
+```
+
+适配器类：
+
+```
+public class Adapter extends Adaptee implements Target{
+    @Override
+    public void sampleOperation2() {
+
+    }
+}
+
+
+```
+
 
 
