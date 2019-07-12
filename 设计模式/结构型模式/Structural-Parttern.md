@@ -103,6 +103,26 @@ public class Adaptee {
 ```
 
 适配器类：
+```
+public class Adapter_Obj implements Target{
+    private Adaptee adaptee;
+    public Adapter_Obj(Adaptee adaptee){
+        this.adaptee = adaptee;
+    }
+    //源类Adaptee有方法sampleOperation1,因此适配器类直接委派即可
+    @Override
+    public void sampleOperation1() {
+        this.adaptee.sampleOperation1();
+    }
+
+    @Override
+    public void sampleOperation2() {
+
+    }
+}
+
+```
+
 
 
 
