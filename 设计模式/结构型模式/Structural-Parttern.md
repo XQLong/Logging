@@ -76,5 +76,22 @@ public class Adapter extends Adaptee implements Target{
 
 适配器角色Adapter继承了Adaptee,同时又实现了目标(Target)接口。由于Adaptee没有提供sampleOperation2()方法，而目标接口又要求这个方法，因此适配器角色Adapter实现了这个方法。
 
+- 对象适配器模式
+
+
+
+目标类与类适配器模式（所期待得到的接口）:
+
+```
+public interface Target {
+    /*源类Adaptee中有的方法*/
+    public void sampleOperation1();
+
+    /*源类Adaptee中没有的方法*/
+    public void sampleOperation2();
+}
+
+```
+
 
 
