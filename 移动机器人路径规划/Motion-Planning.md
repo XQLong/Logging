@@ -4,11 +4,11 @@
 
 ### 1.1路径规划概念
 
-- - 应用场景
+- 应用场景
 
 身边的路径规划应用实例：
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563027280675-1563027280680.png)
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563027343428-1563027343433.png)
 
 
 <div align="center">
