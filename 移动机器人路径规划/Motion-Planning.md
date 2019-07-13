@@ -49,6 +49,9 @@
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563021339983-1563021339988.png)
 
+</div>
+
+如图所示，在切线图法中
 
 ### 1.3路径规划
 
