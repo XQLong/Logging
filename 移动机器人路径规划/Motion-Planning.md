@@ -4,6 +4,12 @@
 
 - 机器人移动环境
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1562989495555-1562989495562.png)
+
+</div>
+
 机器人移动的环境包括自由空间和障碍物占据的空间。
 
 ## 常见算法及其特点
