@@ -22,6 +22,9 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 ## 2.Dijkstra算法
 
 <div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1562978599408-1562978599414.png)
+
 </div>
 
 ### 2.1 算法思路
