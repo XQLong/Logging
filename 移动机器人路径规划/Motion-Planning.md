@@ -27,6 +27,12 @@
 
 - 栅格表示法
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563021118607-1563021118611.png)
+
+</div>
+
 栅格表示环境地图是一种度量式表示环境的方法，机器人根据地图边界的大小量化成大小与自身等大的多个矩形，然后在所建立的环境地图上通过搜索算法进行路径规划。利用栅格法构建地图模型的步骤：
 
 <div align="center">
