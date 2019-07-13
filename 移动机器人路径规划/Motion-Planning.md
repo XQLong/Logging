@@ -8,8 +8,13 @@
 
 身边的路径规划应用实例：
 
+<div align="center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563027343428-1563027343433.png)
 
+</div>
+
+例如无人机避障，各种地图导航和打车软件，物流调度系统，
 
 <div align="center">
 
