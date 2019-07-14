@@ -121,6 +121,10 @@ A*算法是结合了Djikstra算法和最佳优先算法两种算法优势提出�
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563076698852-1563076699032.png)
 
+</div>
+
+- 迪杰斯特拉算法的优势在于
+
 A*算法作为经典算法，以其实用性至今被广泛应用，并且针对不同的应用场景具有很强的扩展性和适应性。
 
 ### 2.1Dijkstra算法
