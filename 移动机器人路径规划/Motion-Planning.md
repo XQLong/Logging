@@ -150,7 +150,13 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 迪杰斯特拉算法示例：
 
+<div align = "center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563102366485-1563102366493.png)
+
+</div>
+
+如图
 
 ### 2.2最佳优先算法（Best-First-Search）
 
