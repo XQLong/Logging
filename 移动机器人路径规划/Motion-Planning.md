@@ -98,6 +98,14 @@
 
 ### 1.4算法搜寻
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563068566748-1563068566752.png)
+
+</div>
+
+
+
 ### 1.5执行算法
 
 
