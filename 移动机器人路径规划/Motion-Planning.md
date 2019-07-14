@@ -144,6 +144,8 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563101115619-1563101115625.png)
 
+</div>
+
 
 
 ### 2.2最佳优先算法（Best-First-Search）
