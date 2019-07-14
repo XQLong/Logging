@@ -16,11 +16,7 @@
 
 例如无人机避障，各种地图导航和打车软件，物流调度系统，自动驾驶技术里面都应用到了路径规划。
 
-<div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1563025407696-1563025407700.png)
-
-</div>
 
 路径规划是机器人研究和核心内容之一，在很多领域都有广泛的应用，如室内服务机器人的自主运动；无人机的避障突防飞行；物流管理中的车辆问题及类似的资源管理、资源配置问题。
 
@@ -100,7 +96,7 @@
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563069336804-1563069336809.png)
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563068566748-1563068566752.png)
 
 </div>
 
