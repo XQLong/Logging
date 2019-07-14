@@ -105,7 +105,11 @@
 
 ### 1.5执行算法
 
+<div align="center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/13/1562989495555-1562989495562.png)
+
+</div>
 
 
 ## 2.常见算法及其特点
