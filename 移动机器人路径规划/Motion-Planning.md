@@ -140,6 +140,10 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 是典型的广度优先算法，优点在于总可以找到最优化路径；但是搜索效率低，难以满足快速规划路径的需求。
 
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/14/1563101115619-1563101115625.png)
+
 
 
 ### 2.2最佳优先算法（Best-First-Search）
