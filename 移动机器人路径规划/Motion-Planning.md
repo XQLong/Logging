@@ -187,6 +187,13 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 无障碍物时的迪杰斯特拉算法的搜寻过程：
 
+
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/Dijkstra0.gif)
+
+</div>
+
 有障碍物时的迪杰斯特拉算法搜寻过程：
 
 <div align = "center">
