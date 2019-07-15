@@ -185,6 +185,8 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 根据迪杰斯特拉算法可以看到，在进行目标点最短路径的搜索过程中会毫无方向的向四周搜索，直到发现目标后即终止搜索。
 
+在无障碍物时的
+
 <div align = "center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/Dijkstra.gif)
