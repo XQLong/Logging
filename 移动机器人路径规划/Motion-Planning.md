@@ -273,7 +273,15 @@ End procedure
 
 </div>
 
-使用最佳优先搜索算法
+使用最佳优先搜索算法：
+
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563196724479-1563196724484.png)
+
+</div>
+
+显然
 
 ### 2.3A*算法
 
