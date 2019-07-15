@@ -210,7 +210,7 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 <div align = "center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/BFS.gif)
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/BFS0.gif)
 
 </div>
 
