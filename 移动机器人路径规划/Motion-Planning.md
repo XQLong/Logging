@@ -168,6 +168,8 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 根据上述算法，在栅格法建模的地图中也是一样，
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563152598269-1563152598454.png)
+
 
 
 ### 2.2最佳优先算法（Best-First-Search）
