@@ -378,10 +378,11 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 <div align = "center">
 
-![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563201838719-1563201838726.png)
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/Astar_Dijkstra2.gif)
 
 </div>
 
+同样，若要得到一条较短
 
 ### 2.4其他算法
 
