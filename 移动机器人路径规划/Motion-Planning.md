@@ -244,6 +244,12 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 其中D为从一个位置移动到邻近位置的最小代价。
 
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563194023576-1563194023580.png)
+
+</div>
+
 ### 2.3A*算法
 
 
