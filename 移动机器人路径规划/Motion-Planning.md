@@ -267,6 +267,8 @@ End procedure
 
 - 迪杰斯特拉算法：
 
+<div align = "center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563196426421-1563196426427.png)
 
 
