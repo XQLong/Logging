@@ -327,7 +327,11 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 **计算启发函数值**：
 
+<div align = "center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563199982355-1563199982359.png)
+
+</div>
 
 对相邻点，一次计算每一点的g_score，h_score，最后得到f_score，如上图所示。
 
