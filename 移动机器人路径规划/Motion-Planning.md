@@ -235,6 +235,7 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 </div>
 
 欧几里得距离即最常用的两点间的直线距离;曼哈顿距离 dis=|x1-x2|+|y1-y2|;切比雪夫距离dis=max{|x1-x2|,|y1-y2|}。例如我们使用曼哈顿距离作为启发函数：
+
 <div align = "center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563160499373-1563160499379.png)
