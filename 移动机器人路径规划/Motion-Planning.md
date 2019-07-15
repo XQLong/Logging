@@ -365,6 +365,8 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 - 直到当goal加入到开启列表中，则完成搜索；
 - 若没有找到goal点，同时开启列表已为空时，则搜索不到路径，结束搜索。
 
+<div align = "center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563201838719-1563201838726.png)
 
 
