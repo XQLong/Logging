@@ -376,6 +376,11 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 要得到一条行得通好的路径即可，而不一定要找到最短路径。这时可以增加启发式函数h(n)的比重，从而使得A*算法更快。
 
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563201838719-1563201838726.png)
+
+</div>
 
 
 ### 2.4其他算法
