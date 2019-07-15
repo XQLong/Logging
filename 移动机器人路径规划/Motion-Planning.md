@@ -317,6 +317,8 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 - 搜索的开始从A点开始，首先将A点加入开启列表，初始阶段开启列表中只有A一个节点，因此将A点从开启列表中取出，将A点加入关闭列表。
 
+<div align = "center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563199798722-1563199798728.png)
 
 
