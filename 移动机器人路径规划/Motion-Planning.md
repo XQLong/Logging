@@ -175,13 +175,21 @@ A*算法作为经典算法，以其实用性至今被广泛应用，并且针对
 
 根据上述算法，在栅格法建模的地图中，
 
+<div align = "center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/1563152598269-1563152598454.png)
+
+</div>
 
 如图所示，假设栅格长度为1，则可以将从一个栅格走到与其相邻栅格的权重（路径长度）为1，斜着通过对角线的权重为1.414，当然也可以根据环境的具体情况决定权重大小，例如有障碍物的情况则无法通行权重为无穷大。
 
 根据迪杰斯特拉算法可以看到，在进行目标点最短路径的搜索过程中会毫无方向的向四周搜索，直到发现目标后即终止搜索。
 
+<div align = "center">
 
+https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/15/Dijstras.gif
+
+</div>
 
 这样虽然总能找到最短的路径，但是算法的空间和时间复杂度都较大。
 
