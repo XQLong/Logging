@@ -409,7 +409,11 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 邻域矩阵以矩阵中1的个数命名。以如下图所示的12领域搜索矩阵（S~12~）为例，
 
+<div align = "center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/16/1563244158397-1563244158403.png)
+
+</div>
 
 判断当前节点是否可通行的依据是：
 
