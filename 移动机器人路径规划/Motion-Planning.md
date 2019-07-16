@@ -501,3 +501,7 @@ n为当前计算节点；start为起始节点；goal为目标节点；x,y分别�
 <div align = "center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/16/1563287446459-1563287446464.png)
+
+</div>
+
+如图所示，当X~1~>Y~1~时，
