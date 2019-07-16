@@ -477,4 +477,6 @@ A*算法的启发函数比最佳优先搜索算法增加了起始点到当前节
 
 结合距离信息和角度信息的启发函数：
 
+<div align = "center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/16/1563286241495-1563286241500.png)
