@@ -545,3 +545,5 @@ cross根据叉积计算获得，通常距离AB为常量；而CD是随着两个�
 *学习文献*
 [1]陈若男,文聪聪,彭玲,尤承增.改进A~*算法在机器人室内路径规划中的应用[J].计算机应用,2019,39(04):1006-1011.
 *参考资料*
+[路径规划——Dijkstra算法](https://zhuanlan.zhihu.com/p/51112799)
+[A* Search Algorithm](http://aandds.com/blog/algorithm-a-star.html)
