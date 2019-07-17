@@ -547,3 +547,4 @@ cross根据叉积计算获得，通常距离AB为常量；而CD是随着两个�
 *参考资料*
 [路径规划——Dijkstra算法](https://zhuanlan.zhihu.com/p/51112799)
 [A* Search Algorithm](http://aandds.com/blog/algorithm-a-star.html)
+[A*算法详解](https://www.jianshu.com/p/8905d4927d5f)
