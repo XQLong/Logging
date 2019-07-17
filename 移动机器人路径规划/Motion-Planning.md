@@ -521,6 +521,7 @@ cross根据叉积计算获得，通常距离AB为常量；而CD是随着两个�
 ## 3.4 结果分析
 
 3.4.1 实验结果定性效果对比
+
 <div align = "center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/17/1563334569399-1563334569403.png)
@@ -531,3 +532,6 @@ cross根据叉积计算获得，通常距离AB为常量；而CD是随着两个�
 可以看到，在改进障碍搜索后障碍物与路径最小距离变大，增大了机器人移动的安全距离；而在改进启发函数后，大大减小了A*算法的搜索范围，提高了搜索效率。
 
 3.4.1 实验结果定量性能
+
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/17/1563334973188-1563334973193.png)
