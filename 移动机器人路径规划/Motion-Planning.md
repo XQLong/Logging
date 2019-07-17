@@ -510,3 +510,10 @@ n为当前计算节点；start为起始节点；goal为目标节点；x,y分别�
 
 在改进的启发函数中还引入了角度信息，它是从起点到终点和从当前点到终点的两个向量的叉积，
 
+<div align = "center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/17/1563332651681-1563332651691.png)
+
+</div>
+
+cross根据叉积计算获得
