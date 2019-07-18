@@ -201,3 +201,7 @@ public class Client {
 
 ```
 
+### 2.4模式优缺点
+
+
+
