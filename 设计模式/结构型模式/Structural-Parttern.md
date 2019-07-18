@@ -139,5 +139,12 @@ public class Adapter_Obj implements Target{
 
 ### 2.2模式结构
 
-外观模式包含外观（Facade）和子系统（SubSystem）两个角色。如下图所示为外观模式的
+外观模式包含外观（Facade）和子系统（SubSystem）两个角色。如下图所示，为外观模式的类图：
+
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/18/1563449640757-1563449640947.png)
+
+</div>
+
 
