@@ -147,4 +147,4 @@ public class Adapter_Obj implements Target{
 
 </div>
 
-
+外观角色是在客户端直接调用的角色，在
