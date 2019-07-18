@@ -157,4 +157,5 @@ public class Adapter_Obj implements Target{
 
 ### 2.3代码示例
 
-以
+以观看电影为例，看电影需要有很多操作，使用外观模式一键实现看电影的功能：
+
