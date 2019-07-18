@@ -154,3 +154,6 @@ public class Adapter_Obj implements Target{
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/18/1563451232132-1563451232138.png)
 
 </div>
+
+### 2.3代码示例
+
