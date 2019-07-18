@@ -147,4 +147,4 @@ public class Adapter_Obj implements Target{
 
 </div>
 
-外观角色是在客户端直接调用的角色，在
+外观角色是在客户端直接调用的角色，在外观角色中可以知道相关子系统的功能和责任，它将所有从客户端
