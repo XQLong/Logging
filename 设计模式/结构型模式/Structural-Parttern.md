@@ -162,5 +162,36 @@ public class Adapter_Obj implements Target{
 子系统类：
 
 ```
+public class SubSystem {
+    public void turnOnTV() {
+        System.out.println("turnOnTV()");
+    }
+    public void setCD(String cd) {
+        System.out.println("setCD( " + cd + " )");
+    }
+    public void startWatching(){
+        System.out.println("startWatching()");
+    }
+}
 
 ```
+
+外观类：
+
+```
+public class Facade {
+    private SubSystem subSystem = new SubSystem();
+    public void watchMovie(){
+        subSystem.turnOnTV();
+        subSystem.setCD("Games of Thrones");
+        subSystem.startWatching();
+    }
+}
+```
+
+客户端类：
+
+```
+
+```
+
