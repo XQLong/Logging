@@ -139,5 +139,5 @@ public class Adapter_Obj implements Target{
 
 ### 2.2模式结构
 
-外观模式包含外观（Facade）和子系统（SubSystem）两个角色。
+外观模式包含外观（Facade）和子系统（SubSystem）两个角色。如下图所示为外观模式的
 
