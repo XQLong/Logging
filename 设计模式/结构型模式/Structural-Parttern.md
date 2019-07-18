@@ -135,5 +135,5 @@ public class Adapter_Obj implements Target{
 
 ### 2.1模式定义
 
-外观模式（Facade Pattern）：
+外观模式（Facade Pattern）：外部与一个子系统的通信必须通过
 
