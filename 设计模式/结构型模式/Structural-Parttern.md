@@ -225,3 +225,4 @@ public class Client {
 
 </div>
 
+抽象主题角色声明了真实主题
