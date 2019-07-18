@@ -219,3 +219,8 @@ public class Client {
 
 代理模式主要包括抽象主题、代理主题和真实主题三个角色，如下图所示为代理模式的类图：
 
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/18/1563454933653-1563454933659.png)
+
+</div>
