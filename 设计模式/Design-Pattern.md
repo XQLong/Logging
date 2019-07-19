@@ -6,6 +6,8 @@
 
 ## 二、常用设计模式
 
+如下图所示为常见的部分设计模式，序号表示了该设计模式重要程度的优先级：
+
 <div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/19/1563538559806-1563538559811.png)
