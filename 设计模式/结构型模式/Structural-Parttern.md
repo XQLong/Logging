@@ -227,4 +227,8 @@ public class Client {
 
 代理模式工作的时序图：
 
+<div align="center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/19/1563497914395-1563497914578.png)
+
+</div>
