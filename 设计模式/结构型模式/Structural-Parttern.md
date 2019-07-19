@@ -279,6 +279,11 @@ public class HighResolutionImage implements Image{
 }
 ```
 
+代理主题类：
+
+```
+
+```
 
 
 
