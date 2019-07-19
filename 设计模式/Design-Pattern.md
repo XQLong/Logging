@@ -6,7 +6,11 @@
 
 ## 二、常用设计模式
 
+<div align="center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/19/1563538559806-1563538559811.png)
+
+</div>
 
 ## 三、设计模式的六大原则
 
