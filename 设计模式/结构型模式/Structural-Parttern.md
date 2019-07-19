@@ -225,3 +225,5 @@ public class Client {
 
 </div>
 
+代理模式工作的时序图：
+
