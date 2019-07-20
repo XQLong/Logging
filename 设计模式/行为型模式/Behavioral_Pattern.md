@@ -47,7 +47,26 @@ public interface Command {
 
 具体命令类：
 ```
-
+public class LightOnCommand implements Command{
+    Light light;
+    public LightOnCommand(Light light){
+        this.light = light;
+    }
+    @Override
+    public void execute() {
+        light.on();
+    }
+}
+public class LightOffCommand implements Command{
+    Light light;
+    public LightOffCommand(Light light){
+        this.light = light;
+    }
+    @Override
+    public void execute() {
+        light.off();
+    }
+}
 ```
 
 
