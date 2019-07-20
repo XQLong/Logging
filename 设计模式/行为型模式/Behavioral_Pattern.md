@@ -29,6 +29,8 @@
 
 <div align="center">
 
-
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/20/1563592173245-1563592173248.png)
 
 </div>
+
+### 1.2
