@@ -82,6 +82,49 @@ public class Light {
 }
 ```
 
+命令模式调用者：
+
+```
+public class Invoker {
+    private Command[] onCommands;
+    private Command[] offCommands;
+    private final int slotNum = 7;
+    public Invoker() {
+        this.onCommands = new Command[slotNum];
+        this.offCommands = new Command[slotNum];
+    }
+    public void setOnCommand(Command command, int slot) {
+        onCommands[slot] = command;
+    }
+    public void setOffCommand(Command command, int slot) {
+        offCommands[slot] = command;
+    }
+    public void onButtonWasPushed(int slot) {
+        onCommands[slot].execute();
+    }
+    public void offButtonWasPushed(int slot) {
+        offCommands[slot].execute();
+    }
+}
+```
+
+命令模式客户端：
+
+```
+public class Client {
+    public static void main(String[] args) {
+        Invoker invoker = new Invoker();
+        Light light = new Light();
+        Command lightOnCommand = new LightOnCommand(light);
+        Command lightOffCommand = new LightOffCommand(light);
+        invoker.setOnCommand(lightOnCommand, 0);
+        invoker.setOffCommand(lightOffCommand, 0);
+        invoker.onButtonWasPushed(0);
+        invoker.offButtonWasPushed(0);
+    }
+}
+```
+
 
 
 
