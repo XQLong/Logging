@@ -17,5 +17,5 @@
 
 ### 1.2 模式结构
 
-命令模式中主要包含抽象命令类（Command）、具体命令类（ConcreteCommand）、Invoke
+命令模式中主要包含抽象命令类（Command）、具体命令类（ConcreteCommand）、调用者（Invoker）、
 
