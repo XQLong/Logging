@@ -19,3 +19,6 @@
 
 命令模式中主要包含抽象命令类（Command）、具体命令类（ConcreteCommand）、调用者（Invoker）、接收者（Receiver）和客户类（Client）。
 
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/20/1563591705570-1563591705574.png)
+
