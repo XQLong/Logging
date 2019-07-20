@@ -147,5 +147,5 @@ public class Client {
 
 </div>
 
-观察者
+观察者模式
 
