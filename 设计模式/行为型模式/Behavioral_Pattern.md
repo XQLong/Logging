@@ -139,7 +139,7 @@ public class Client {
 
 ### 2.2 模式结构
 
-观察者模式主要包括目标（Subject）、具体目标（ConcreteSubject）、观察者（Observer）、具体观察者（ConcreteObserver）四个角色
+观察者模式主要包括目标（Subject）、具体目标（ConcreteSubject）、观察者（Observer）、具体观察者（ConcreteObserver）四个角色，观察者模式的
 
 
 
