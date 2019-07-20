@@ -69,6 +69,11 @@ public class LightOffCommand implements Command{
 }
 ```
 
+命令接收者类：
+
+```
+
+```
 
 
 
