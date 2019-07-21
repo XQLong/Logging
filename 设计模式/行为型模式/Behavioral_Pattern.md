@@ -292,7 +292,28 @@ public class WeatherStation {
 抽象策略类：
 
 ```
+public interface QuackBehavior {
+    void quack();
+}
+```
+
+具体策略类：
 
 ```
+public class Quack implements QuackBehavior{
+    @Override
+    public void quack() {
+        System.out.println("quack!");
+    }
+}
+public class Squeak implements QuackBehavior{
+    @Override
+    public void quack() {
+        System.out.println("squeak!");
+    }
+}
+```
+
+环境类
 
 
