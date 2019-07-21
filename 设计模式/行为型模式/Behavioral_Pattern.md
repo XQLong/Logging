@@ -260,9 +260,11 @@ public class WeatherStation {
 
 ## 3.策略模式（Strategy Pattern）
 
+## 3.1 
+
 策略模式：定义一系列算法，将每一个算法封装起来，并让他们可以互相替换。策略模式让算法独立于使用它的客户端而变化，也称为政策模式（Policy）。
 
-## 3.1模式结构
+## 3.2模式结构
 
 策略模式主要包含环境类（Context）、抽象策略类（Strategy）、具体策略类（ConcreteStrategy）三个角色，策略模式的类图如下图所示：
 
