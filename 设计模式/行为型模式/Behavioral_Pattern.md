@@ -260,7 +260,7 @@ public class WeatherStation {
 
 ## 3.策略模式（Strategy Pattern）
 
-策略模式：定义一系列算法，将每一个算法封装起来
+策略模式：定义一系列算法，将每一个算法封装起来，并让他们可以
 
 
 
