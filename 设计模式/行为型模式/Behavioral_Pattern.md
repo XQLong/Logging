@@ -264,7 +264,9 @@ public class WeatherStation {
 
 ## 3.1模式结构
 
-策略模式包含环境类（Context）、抽象策略类（Strategy）、具体策略类（Concrete）
+策略模式主要包含环境类（Context）、抽象策略类（Strategy）、具体策略类（ConcreteStrategy）三个角色，策略模式的类图如下图所示：
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/21/1563708036760-1563708036769.png)
 
 
 
