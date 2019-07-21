@@ -264,7 +264,7 @@ public class WeatherStation {
 
 ## 3.1模式结构
 
-
+策略模式包含环境类（Context）、抽象策略类（Strategy）、具体策略类（Concrete）
 
 
 
