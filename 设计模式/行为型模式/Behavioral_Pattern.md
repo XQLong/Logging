@@ -281,4 +281,4 @@ public class WeatherStation {
 
 </div>
 
-在策略中
+在策略模式中，应当由客户端自己决定
