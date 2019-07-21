@@ -272,4 +272,5 @@ public class WeatherStation {
 
 </div>
 
+策略模式是一个比较好理解的设计模式，策略模式是对算法的封装，它吧算法的责任和算法本身
 
