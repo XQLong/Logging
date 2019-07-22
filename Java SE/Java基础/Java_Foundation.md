@@ -4,6 +4,11 @@ Java最重要的特性之一就是它的内存分配系统。
 
 原始数据类型：
 
-|column1|column2|column3|
+|类型|所占字节|
 |-|-|-|
-|content1|content2|content3|
+|int|4|
+|float|2|
+|double|4|
+|int|4|
+|int|4|
+|int|4|
