@@ -14,6 +14,6 @@
 ```
 列数：arr[0].length；
 行数：arr.length
-位置（x,y）处的值：
+位置（x,y）处的值：arr[x][y]
 ```
 
