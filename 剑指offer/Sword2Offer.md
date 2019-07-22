@@ -55,6 +55,11 @@ public String replaceSpace(StringBuffer str) {
     }
 ```
 
-## 3、从头到尾打印链表
+## 3、从尾到头打印链表
+
+## 解答思路
+
+## 代码示例
+
 
  
