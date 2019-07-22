@@ -59,7 +59,7 @@ public String replaceSpace(StringBuffer str) {
 
 ## 解答思路
 
-本题采用
+本题采用递归的思路较为简单，声明一个全局
 
 ## 代码示例
 
