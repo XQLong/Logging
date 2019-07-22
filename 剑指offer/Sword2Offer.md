@@ -82,7 +82,11 @@ public class Solution {
 ```
 - 链表头插法构造逆序链表法：
 
+<div align="center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/22/1563805689367-1563805689398.png)
+
+</div>
 
 ```
 import java.util.ArrayList;
