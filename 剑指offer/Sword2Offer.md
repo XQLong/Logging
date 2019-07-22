@@ -82,6 +82,9 @@ public class Solution {
 ```
 - 链表头插法构造逆序链表法：
 
+
+
+```
 import java.util.ArrayList;
 public class Solution {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
@@ -102,8 +105,6 @@ public class Solution {
         return res;
     }
 }
-
-
-
+```
 
  
