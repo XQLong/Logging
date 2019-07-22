@@ -58,8 +58,11 @@ Java不能隐式执行向下转换，因为这样会降低精度。当不作声�
 
 三个访问权限修饰符：private、protected、public，不加访问修饰符表示包级可见。
 
+<div align="center">
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/22/1563784677899-1563784678106.png)
 
+</div>
 
 
  
