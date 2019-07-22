@@ -59,9 +59,26 @@ public String replaceSpace(StringBuffer str) {
 
 ## 解答思路
 
-本题采用递归的思路较为简单，声明一个全局变量来存储返回结果，使用递归对链表进行遍历将链表中的值存入。
+本题采用递归的思路较为简单，声明一个全局变量来存储返回结果，使用递归对链表进行遍历将链表中的值按从尾到头存入。
 
 ## 代码示例
+
+```
+import java.util.ArrayList;
+public class Solution {
+    ArrayList<Integer> res = new ArrayList();
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        traversal(listNode);
+        return res;
+    }
+    public void traversal(ListNode listNode){
+        if(listNode==null) return;
+        traversal(listNode.next);
+        res.add(listNode.val);
+    }
+}
+```
+
 
 
  
