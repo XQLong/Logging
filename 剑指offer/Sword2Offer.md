@@ -42,4 +42,17 @@
 
 
 ### 代码示例：
+
+```
+public String replaceSpace(StringBuffer str) {
+    	char[] chars = str.toString().toCharArray();
+        String res = "";
+        for(int i=0;i<chars.length;i++){
+            if(chars[i]==' ') res += "%20";
+            else res += String.valueOf(chars[i]);
+        }
+        return res;
+    }
+```
+
  
