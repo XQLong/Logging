@@ -82,7 +82,26 @@ public class Solution {
 ```
 - 链表头插法构造逆序链表法：
 
-
+import java.util.ArrayList;
+public class Solution {
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        ArrayList<Integer> res = new ArrayList();
+        ListNode head = new ListNode(-1);
+        ListNode cur = listNode;
+        while(cur!=null){
+            ListNode left = head.next;
+            head.next = cur;
+            cur = cur.next;
+            head.next.next = left;
+        }
+        cur = head.next;
+        while(cur!=null){
+            res.add(cur.val);
+            cur = cur.next;
+        }
+        return res;
+    }
+}
 
 
 
