@@ -64,6 +64,7 @@ public String replaceSpace(StringBuffer str) {
 ## 代码示例
 
 - 递归法：
+
 ```
 import java.util.ArrayList;
 public class Solution {
@@ -79,6 +80,10 @@ public class Solution {
     }
 }
 ```
+- 链表头插法构造逆序链表法：
+
+
+
 
 
 
