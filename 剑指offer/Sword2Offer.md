@@ -63,6 +63,7 @@ public String replaceSpace(StringBuffer str) {
 
 ## 代码示例
 
+- 递归法：
 ```
 import java.util.ArrayList;
 public class Solution {
