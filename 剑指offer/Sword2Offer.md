@@ -19,5 +19,20 @@
 
 ### 代码示例：
 
+```
+ public boolean Find(int target, int [][] array) {
+        int l = array[0].length;    //列数
+        int h = array.length;        //行数
+        int x = l-1,y=0;
+        while(x>=0&&y<h){
+            if(array[y][x]==target) return true;
+            else if(array[y][x]>target) x--;
+            else y++;
+        }
+        return false;
+    }
+```
 
+## 2、替换空格
 
+请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
