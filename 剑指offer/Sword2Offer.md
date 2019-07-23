@@ -208,11 +208,12 @@ public class Solution {
 
 ### 解答思路
 
-考察结合题目已知信息，利用利用二分查找来优化查找算法。
+考察结合题目已知信息，利用利用二分查找来优化查找算法。如图所示若当区间的左边界和有边界的值
 <div align="center">
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/23/1563891575760-1563891576056.png)
 
+</div>
 ### 代码示例
 
 
