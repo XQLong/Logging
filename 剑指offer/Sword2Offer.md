@@ -218,7 +218,7 @@ public class Solution {
 
 </div>
 
-根据
+根据l,mid,r三个位置值的大小来确定目标值所在的区间，依次类推。
 
 ### 代码示例
 
