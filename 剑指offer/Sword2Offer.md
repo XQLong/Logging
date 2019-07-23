@@ -174,8 +174,11 @@ public class Solution {
     pop();
     pop();
 ````
-<div>
+<div align="center">
+
 ![image](https://github.com/XQLong/java_workplace/blob/master/img/stark_queue.png)
+
+</div>
 
 ### 代码示例
 
