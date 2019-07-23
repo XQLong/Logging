@@ -209,6 +209,9 @@ public class Solution {
 ### 解答思路
 
 考察结合题目已知信息，利用利用二分查找来优化查找算法。
+<div align="center">
+
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/07/23/1563891575760-1563891576056.png)
 
 ### 代码示例
 
