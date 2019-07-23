@@ -246,7 +246,7 @@ public class MinNumberInRotateArray {
     }
     public int Search(int[] arr,int l,int r){
         int res = arr[l];
-        for(int i=l;i<r;i++){
+        for(int i=l;i<=r;i++){
             if(arr[i]<res) res = arr[i];
         }
         return res;
