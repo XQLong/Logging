@@ -316,9 +316,32 @@ public class Solution {
 
 ### 解答思路
 
+青蛙跳台阶问题：当青蛙即将跳上n级台阶时，共有两种可能性，一种是从n-1级台阶跳一步到n级，另外一种是从n-2级台阶跳两步到n级，所以求到n级台阶的所有可能性`f(n)`就转变为了求到n-2级台阶的所有可能性`f(n-2)`和到n-1级台阶的所有可能性`f(n-1)`之和，以此类推至最后`f(2)=f(0)+f(1)=1+1`。
 
+递推公式就是
+
+``
+f(n) = f(n - 1) + f(n - 2)
+``
 
 ### 代码示例
+
+```
+public class Solution {
+    public int JumpFloor(int target) {
+        if(target<=2) return target;
+        int a0 = 1, a1 = 2;
+        int res = 0;
+        for(int i=3;i<=target;i++){
+            res = a0+a1;
+            a0 = a1;
+            a1 = res;
+        }
+        return res;
+    }
+}
+```
+
 
 
 
