@@ -202,7 +202,7 @@ public class Solution {
 }
 ```
 
-## 6。
+## 6、旋转数组的
 
 
  
