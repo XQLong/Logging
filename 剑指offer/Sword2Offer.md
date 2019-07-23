@@ -272,6 +272,8 @@ public class MinNumberInRotateArray {
 
 ### 代码示例
 
+
+
 ```
 public class Solution {
     public int Fibonacci(int n) {
@@ -288,7 +290,8 @@ public class Solution {
 ```
 
 ```
-public int fibonacci(int n) {
+public class Solution {
+    public int fibonacci(int n) {
         if (n<=1) return n;
         int pre1 = 1;
         int pre2 = 0;
@@ -301,7 +304,8 @@ public int fibonacci(int n) {
             i++;
         }
         return res;
-    }
+    }	
+}
 ```
 
 
