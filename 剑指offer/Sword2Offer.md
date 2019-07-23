@@ -348,8 +348,15 @@ public class Solution {
 
 ### 解答思路
 
+与上提类似，对于可以跳任意n阶的青蛙（变态青蛙跳问题），则递推公式变为：
+
+``
+f(n) = f(n - 1) + f(n - 2)+···+f(1)+1
+``
+
 ### 代码示例
 
+```
 public class Solution {
     public int JumpFloorII(int target) {
         if(target<=2) return target;
@@ -366,6 +373,9 @@ public class Solution {
         return arr[target];
     }
 }
+```
+
+
 
 
  
