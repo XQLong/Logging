@@ -236,10 +236,8 @@ public class MinNumberInRotateArray {
         else if(arr[l]>arr[r]) {
             if(arr[l]>arr[mid]){
                 return binarySearch(arr,l,mid);
-            }else if(arr[l]<arr[mid]){
-                return binarySearch(arr,mid,r);
             }else{
-                return Search(arr,l,r);
+                return binarySearch(arr,mid,r);
             }
         }
         else return Search(arr,l,r);
