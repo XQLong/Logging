@@ -122,8 +122,37 @@ public class Solution {
 前序遍历数组pre：[1,2,4,7,3,5,6,8]
 中序遍历数组in：[4,7,2,1,5,3,8,6]
 ```
-根据前序遍历的定义显然二叉树的根节点(记为root)的val为pre[0]=1，那么问题转化为从此根节点从发求取其左右子树的问题。又结合中序遍历的特点，在数组in中值为1的位置的两边分别为其左右字数的值，即左子树部分pre:[2,4,7],in[4,7,2];右子树部分pre:[3,5,6,8],in:[5,3,8,6]。那么求取root的左右节点的问题则归结于求取其子问题，即其左右子树根节点的问题。依次类推，直至递归玩所有的节点则对二叉树完成了重构。具体的我
+根据前序遍历的定义显然二叉树的根节点(记为root)的val为pre[0]=1，那么问题转化为从此根节点从发求取其左右子树的问题。又结合中序遍历的特点，在数组in中值为1的位置的两边分别为其左右字数的值，即左子树部分pre:[2,4,7],in[4,7,2];右子树部分pre:[3,5,6,8],in:[5,3,8,6]。那么求取root的左右节点的问题则归结于求取其子问题，即其左右子树根节点的问题。依次类推，直至递归玩所有的节点则对二叉树完成了重构。具体的编程实现，用到了一个Map来存储
 
 ### 代码示例
+
+```
+import java.util.Map;
+import java.util.HashMap;
+public class Solution {
+    //使用一个HashMap来存储in矩阵中各个值的索引
+    HashMap<Integer,Integer> index = new HashMap<>();
+    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+        int len = pre.length;
+        if(len==0) return null;
+        int l = 0,r = len-1;
+        for(int i=0;i<len;i++){
+            index.put(in[i],i);
+        }
+        return divide(pre,l,r,l,r);
+    }
+    //迭代地划分为子问题求解
+    public TreeNode divide(int [] pre,int prel,int prer,int inl,int inr){
+        if(prel>prer) return null;
+        int val = pre[prel];
+        int ind = index.get(val);
+        int lsize = ind-inl,rsize = inr-ind;
+        TreeNode root = new TreeNode(val);
+        root.left = divide(pre,prel+1,prel+lsize,inl,ind-1);
+        root.right = divide(pre,prel+lsize+1,prel+lsize+rsize,ind+1,inr);
+        return root;
+    } 
+}
+```
 
  
