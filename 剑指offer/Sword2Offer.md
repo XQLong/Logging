@@ -272,7 +272,7 @@ public class MinNumberInRotateArray {
 
 ### 代码示例
 
-
+- 动态规划
 
 ```
 public class Solution {
@@ -288,6 +288,8 @@ public class Solution {
     }
 }
 ```
+
+- 动态规划的优化（仅存储两个值）
 
 ```
 public class Solution {
