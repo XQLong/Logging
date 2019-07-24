@@ -752,4 +752,48 @@ public class Solution {
 
 ### 代码示例
 
+```
+import java.util.ArrayList;
+public class Solution {
+    ArrayList<Integer> res = new ArrayList<>();
+    public ArrayList<Integer> printMatrix(int [][] matrix) {
+        int width = matrix[0].length, height = matrix.length;
+        if(width<=0||height<=0) return null;
+        //各个边界点的上下左右四个起始值
+        int l=0, r=width-1, u=0, d=height-1;
+        while(r>=l&&d>=u){
+            print(matrix,l,r,d,u);
+            l++;
+            r--;
+            u++;
+            d--;
+        }
+        return res;
+    }
+    public void print(int [][] matrix,int l,int r,int d,int u){
+        //上
+        for(int i=l;i<=r;i++){
+            res.add(matrix[u][i]);
+        }
+        //右
+        for(int i=u+1;i<d;i++){
+            res.add(matrix[i][r]);
+        }
+        //下
+        if(u!=d){
+            for(int i=r;i>=l;i--){
+                res.add(matrix[d][i]);
+            }
+        }
+        //左
+        if(l!=r){
+            for(int i=d-1;i>u;i--){
+                res.add(matrix[i][l]);
+            }
+        }
+    }
+}
+```
+
+
 
