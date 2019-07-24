@@ -565,6 +565,9 @@ public class Solution {
 
 - 头插法反转链表，参照第三题解答。
 
+![reverseList2](https://github.com/XQLong/java_workplace/blob/master/img/ReverseList2.png)
+
+
 ### 代码示例
 
 ```
