@@ -600,5 +600,24 @@ public class Solution {
 }
 ```
 
-- 
+- 递归法
+
+```
+public class Solution {
+    public ListNode ReverseList(ListNode head) {
+        if(head==null||head.next==null) return head;
+        ListNode next = head.next;
+        head.next = null;
+        ListNode child = ReverseList(next);
+        next.next = head;
+        return child;
+    }
+}
+```
+
+## 16、合并两个排序的
+
+### 解答思路
+
+### 代码示例
 
