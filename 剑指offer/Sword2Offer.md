@@ -729,9 +729,23 @@ public class Solution {
 ### 代码示例
 
 ```
-
+public class Solution {
+    public void Mirror(TreeNode root) {
+        if(root==null) return;
+        Mirror(root.left);
+        Mirror(root.right);
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        root.left = right;
+        root.right = left;
+    }
+}
 ```
 
+## 8、跳台阶
 
+### 解答思路
+
+### 代码示例
 
 
