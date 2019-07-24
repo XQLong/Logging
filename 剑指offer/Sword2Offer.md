@@ -382,6 +382,16 @@ public class Solution {
 
 ### 解答思路
 
+<div align="center">
+    <img src="https://github.com/XQLong/java_workplace/blob/master/img/RectangleCover.png"></img>
+</div>
+
+那么对于2*n大小的矩阵可以分为两种情况如上图：
+- 第一块竖着放，则剩下的部分覆盖方法数为f(n-1)；
+
+- 第二种第一块横着放，则余下部分覆盖方法为f(n-2)。
+所以在n大于2时，可以推导出f(n) = f(n-1)+f(n-2)。
+
 ### 代码示例
 
 
