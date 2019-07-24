@@ -387,12 +387,36 @@ public class Solution {
 </div>
 
 那么对于2*n大小的矩阵可以分为两种情况如上图：
-- 第一块竖着放，则剩下的部分覆盖方法数为f(n-1)；
 
+- 第一块竖着放，则剩下的部分覆盖方法数为f(n-1)；
 - 第二种第一块横着放，则余下部分覆盖方法为f(n-2)。
+
 所以在n大于2时，可以推导出f(n) = f(n-1)+f(n-2)。
 
 ### 代码示例
+
+```
+public class Solution {
+    public int RectCover(int target) {
+        if(target<=2) return target;
+        int a1 = 1, a2 = 2;
+        int res = 0;
+        for(int i=3;i<=target;i++){
+            res = a1 +a2;
+            a1 = a2;
+            a2 = res;
+        }
+        return res;
+    }
+}
+```
+
+## 11、二进制中1的个数
+
+### 解答思路
+
+### 代码示例
+
 
 
 
