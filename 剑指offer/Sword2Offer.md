@@ -701,4 +701,28 @@ public class Solution {
 
 ### 代码示例
 
+```
+public class Solution {
+    public boolean HasSubtree(TreeNode root1,TreeNode root2) {
+        if(root2==null) return false;
+        if(root1==null) return false;
+        if(isContain(root1,root2)) return true;
+        return HasSubtree(root1.left,root2)||HasSubtree(root1.right,root2);
+    }
+    public boolean isContain(TreeNode root1,TreeNode root2){
+        if(root2==null) return true;    //root2为子树
+        if(root1==null) return false;
+        if((root1.val!=root2.val)) return false;
+        else return isContain(root1.left,root2.left)&&isContain(root1.right,root2.right);   
+    }
+}
+```
+
+## 18、
+
+### 解答思路
+
+### 代码示例
+
+
 
