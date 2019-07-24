@@ -878,6 +878,27 @@ public class Solution {
 
 ### 代码示例
 
+```
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
+
+public class Solution {
+    public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        ArrayList<Integer> res = new ArrayList<>();
+        if(root==null) return res;
+        queue.add(root);
+        while(!queue.isEmpty()){
+            TreeNode cur = queue.poll();
+            res.add(cur.val);
+            if(cur.left!=null) queue.add(cur.left);
+            if(cur.right!=null) queue.add(cur.right);
+        }
+        return res;
+    }
+}
+```
 
 
 
