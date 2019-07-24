@@ -571,9 +571,11 @@ public class Solution {
 
 </div>
 
-- 递归法
+- 递归法转换为子问题的求解，例如对于
 
 ### 代码示例
+
+- 头插法：
 
 ```
 public class Solution {
