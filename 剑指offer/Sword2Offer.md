@@ -472,6 +472,27 @@ public class Solution {
 
 ### 解答思路
 
-若题目要求不能使用Math类中的相关计算次方的函数，则直接根据次方的定义利用乘法计算，其中需
+若题目要求不能使用Math类中的相关计算次方的函数，则直接根据次方的定义利用乘法计算，其中需注意exponent的符号。
+
+### 代码示例
+
+```
+public class Solution {
+    public double Power(double base, int exponent) {
+        if(exponent==0) return 1;
+        double b =base;
+        int e = exponent<0?(-exponent):exponent;
+        while(e>1){
+            base *= b;
+            e--;
+        }
+        return exponent<0?(1/base):base;
+   }
+}
+```
+
+## 8、跳台阶
+
+### 解答思路
 
 ### 代码示例
