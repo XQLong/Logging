@@ -567,3 +567,19 @@ public class Solution {
 
 ### 代码示例
 
+```
+public class Solution {
+    public ListNode ReverseList(ListNode head) {
+        ListNode newHead = new ListNode(-1);
+        ListNode cur = head;
+        while(cur!=null){
+            ListNode left = newHead.next;
+            newHead.next = cur;
+            cur = cur.next;
+            newHead.next.next = left;
+        }
+        return newHead.next;
+    }
+}
+```
+
