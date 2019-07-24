@@ -850,8 +850,30 @@ public class Solution {
 ### 代码示例
 
 ```
-
+import java.util.Stack;
+public class Solution {
+    public boolean IsPopOrder(int [] pushA,int [] popA) {
+        Stack<Integer> stack = new Stack<Integer>();
+        int ind = 0 ,len=popA.length;
+        if(len!=pushA.length) return false;
+        for(int i=0;i<len;i++){
+            stack.push(pushA[i]);
+            while(!stack.isEmpty()&&stack.peek()==popA[ind]){
+                stack.pop();
+                ind++;
+            }
+        }
+        return stack.isEmpty()?true:false;
+    }
+}
 ```
+
+## 22、跳台阶
+
+### 解答思路
+
+### 代码示例
+
 
 
 
