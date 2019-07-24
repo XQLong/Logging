@@ -621,5 +621,7 @@ public class Solution {
 
 ### 解答思路
 
+- 使用两个指针
+
 ### 代码示例
 
