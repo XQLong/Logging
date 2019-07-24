@@ -501,3 +501,34 @@ public class Solution {
 
 ### 代码示例
 
+```
+public class Solution {
+    public void reOrderArray(int [] array) {
+        int len = array.length;
+        int[] temp = new int[len];
+        int  num = 0;    //统计数组中奇数个数
+        for(int i=0;i<len;i++){
+            if(array[i]%2!=0) num++;
+            temp[i] = array[i];
+        } 
+        int l = 0, r = l+num;
+        for(int j=0;j<len;j++) {
+            if(temp[j]%2 != 0){
+                array[l] = temp[j];
+                l++;
+            }else{
+                array[r] = temp[j];
+                r++;
+            }
+        }
+    }
+}
+```
+
+## 14、链表中的第K个节点
+
+输入一个链表，输出该链表中倒数第k个结点。
+
+### 解答思路
+
+### 代码示例
