@@ -801,6 +801,12 @@ public class Solution {
 
 ### 解答思路
 
+分别用两个栈`stack`来保存数据值，用`min`来保存最小值。
+- 当对数据栈`stack`进行入栈操作时，选择`min`中当前最小值与入栈值进行比较
+
+- 入栈值中较小的压入`MiniStack`；
+当对数据栈`DataStack`进行出栈操作时，也对`MiniStack`进行出栈操作。
+
 ### 代码示例
 
 
