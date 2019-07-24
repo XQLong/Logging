@@ -805,9 +805,34 @@ public class Solution {
 - 当对数据栈`stack`进行入栈操作时，选择`min`中当前最小值与入栈值进行比较确定较小值，入栈`min`。
 
 - 入栈值中较小的压入`min`；
-当对数据栈`DataStack`进行出栈操作时，也对`MiniStack`进行出栈操作。
+当对数据栈`stack`进行出栈操作时，也对`min`进行出栈操作。
 
 ### 代码示例
+
+```
+import java.util.Stack;
+public class Solution {
+    Stack<Integer> stack = new Stack<Integer>();
+    Stack<Integer> min = new Stack<Integer>();
+    public void push(int node) {
+        int mini = !min.isEmpty()?min.peek():node;
+        mini = mini<node?mini:node;
+        min.push(mini);
+        stack.push(node);
+    }
+    public void pop() {
+        stack.pop();
+        min.pop();
+    }
+    public int top() {
+        return stack.peek();
+    }
+    public int min() {
+        return min.peek();
+    }
+}
+```
+
 
 
 
