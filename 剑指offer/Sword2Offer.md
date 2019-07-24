@@ -695,9 +695,9 @@ public class Solution {
 
 ### 解答思路
 
-使用递归的
+使用递归的思路将
 该算法流程主要由两个函数构成：
-- 判断从起始节点开始比较，root1是否包root2部分的`isContain`函数；
+- 判断从根节点开始比较，root1是否包root2部分的`isContain`函数；
 - 遍历root1中的所有结点作为根节点，分别与子树进行比较的`HasSubtree`函数。
 
 ### 代码示例
