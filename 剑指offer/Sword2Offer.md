@@ -629,7 +629,8 @@ public class Solution {
 
 </div>
 
-- 递归转化为子问题的求解，若list1的第一个节点小于list2的第一个节点，则合并后的链表头结点为list1，那么问题转为求取list1.next和list2合并的问题，依次递归；反过来list1的第一个节点大于list2的第一个节点，则合并后的链表头结点为list2，那么问题转为求取list1和list2合并的问题
+- 递归转化为子问题的求解，若list1的第一个节点小于list2的第一个节点，则合并后的链表头结点为list1，那么问题转为求取list1.next和list2合并的问题，依次递归；反过来list1的第一个节点大于list2的第一个节点，则合并后的链表头结点为list2，那么问题转为求取list1和list2.next合并的问题,依次递归。
+
 ### 代码示例
 
 - 迭代两链表所有节点进行新链表连接：
@@ -662,5 +663,25 @@ public class Solution {
     }
 }
 ```
+
+- 递归转化为子问题：
+
+```
+public class Solution {
+    public ListNode  Merge(ListNode list1,ListNode list2) {
+        if(list1==null) return list2;
+        if(list2==null) return list1;
+        if(list1.val<list2.val){
+            list1.next = Merge(list1.next,list2);
+            return list1;
+        }else{
+            list2.next = Merge(list1,list2.next);
+            return list2;
+        }
+    }
+}
+```
+
+
 
 
