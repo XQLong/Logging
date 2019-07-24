@@ -909,7 +909,26 @@ public class Solution {
 ### 代码示例
 
 ```
-
+public class Solution {
+    public boolean VerifySquenceOfBST(int [] sequence) {
+        int len = sequence.length;
+        if(sequence.length==0) return false;
+        return VerifySquence(sequence,0,len-1);
+    }
+    public boolean VerifySquence(int [] sequence,int l,int r) {
+        if(r-l<=1) return true;
+        int val = sequence[r];
+        int ind = r;
+        //求右子树的左边界
+        while(ind-1>=l&&val<sequence[ind-1]) ind--; 
+        int l2 = ind, r2 = r-1;    //右子树在矩阵中边界
+        //判断左子树的左边界是否为l
+        while(ind-1>=l&&val>sequence[ind-1]) ind--; 
+        if(ind!=l) return false;    //不符合二叉搜索树性质
+        int l1 = l, r1 = l2-1;    //左子树在矩阵中边界
+        return VerifySquence(sequence,l1,r1)&&VerifySquence(sequence,l2,r2);
+    }
+}
 ```
 
 
