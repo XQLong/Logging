@@ -571,7 +571,14 @@ public class Solution {
 
 </div>
 
-- 递归法转换为子问题的求解，例如对于长度为n的链表转换为第一个头结点head和后面n-1个节点的链接反转问题
+- 递归法转换为子问题的求解，例如对于长度为n的链表转换为第一个头结点head和后面n-1个节点的链接反转问题，依次类推递归求解：
+
+<div align="center">
+
+![reverseList1](https://github.com/XQLong/java_workplace/blob/master/img/ReverseList1.png)
+
+</div>
+
 
 ### 代码示例
 
@@ -592,4 +599,6 @@ public class Solution {
     }
 }
 ```
+
+- 
 
