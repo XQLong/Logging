@@ -621,7 +621,11 @@ public class Solution {
 
 ### 解答思路
 
-- 使用两个指针分别指向两个链表，比较当前位置两个值的大小，从而选取节点进行连接操作，更新指针位置和新链表尾结点，直至两个
+- 使用两个指针分别指向两个链表，比较当前位置两个值的大小，从而选取节点进行连接操作，更新指针位置和新链表尾结点，直至两个链表的节点遍历完。
+
+![MergeLinkList1](https://github.com/XQLong/java_workplace/blob/master/img/MergeLinkList1.png)
+
+- 
 
 ### 代码示例
 
