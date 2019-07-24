@@ -629,7 +629,7 @@ public class Solution {
 
 </div>
 
-- 
+- 递归转化为子问题的求解，若list1的第一个节点小于list2的第一个节点，则合并后的
 
 ### 代码示例
 
