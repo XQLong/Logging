@@ -536,4 +536,30 @@ public class Solution {
 
 ### 代码示例
 
-- 
+- 方法2：
+
+```
+public class Solution {
+    public ListNode FindKthToTail(ListNode head,int k) {
+        if(head==null) return null;
+        if(isSizeofK(head,k)) return head;
+        return FindKthToTail(head.next,k);
+    }
+    public boolean isSizeofK(ListNode head,int k){
+        int cnt = k;
+        ListNode cur = head;
+        while(cur!=null){
+            k--;
+            cur = cur.next;
+        }
+        return k==0?true:false;
+    }
+}
+```
+
+## 15、跳台阶
+
+### 解答思路
+
+### 代码示例
+
