@@ -425,8 +425,26 @@ public class Solution {
 
 ### 代码示例
 
-- 
+- 无符号右移运算
 
+```
+public class Solution {
+    public int NumberOf1(int n) {
+        int a = 1;
+        int res = 0;
+        while(n!=0){
+            if((n&a)==1) res++;
+            n = n>>>1;
+        }
+        return res;
+    }
+}
+```
+
+- 利用`n = n&(n-1)`
+
+
+- Integer类的bitCount函数
 
 
 
