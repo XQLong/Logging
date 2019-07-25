@@ -2,7 +2,7 @@
 
 按照牛客网剑指offer题库的顺序，刷题相关笔记记录如下，详细代码可以参考	[XQL剑指offer笔记](https://github.com/XQLong/java_workplace/tree/master/src/Sword2Offer)。
 
-（注：题目所用到的二叉树、链表、复杂链表等相关类放在TestInsa）
+（注：题目所用到的二叉树、链表、复杂链表等相关类放在TestInstance文件夹，）
 
 ## 1、二维数组查找
 
