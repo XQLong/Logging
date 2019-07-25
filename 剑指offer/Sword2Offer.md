@@ -1163,14 +1163,37 @@ public class Solution {
 
 `Moore’s Vote`算法比较直观的解释：在数组中找到两个不相同的元素并删除它们，不断重复此过程，直到数组中元素都相同，那么剩下的元素就是主要元素。因为直接在里面删除元素是很费时的，取而代之的可以利用一个计数变量来实现。
 
-````
-初始化计数值cnt为0
-扫描数组
-    如果cnt=0,num确定为数组当前扫描值，cnt=1
-    如果cnt!=0
-        num与数组当前扫描至相等，则cnt++
-        num与数组当前扫描不相等，则cnt--
+```
+
+```
 
 当我们找到这样一个元素时，还要进一步验证一下它是否满足条件。即再遍历一遍，统计它的出现次数。
 
 ### 代码示例
+
+```
+public class Solution {
+    public int MoreThanHalfNum_Solution(int [] array) {
+        int len = array.length;
+        if(len==0) return 0;
+        int vote =0,num= array[0];
+        for(int i=0;i<len;i++){
+            if(vote==0){
+                num= array[i];
+                vote=1;
+            }else{
+                if(num==array[i]){
+                    vote++;
+                }else{
+                    vote--;
+                }
+            }
+        }
+        for (int j=0,count = 0;j<len;j++){
+            if(array[j]==num) count++;
+            if(count>len/2) return num;
+        }
+        return 0;
+    }
+}
+```
