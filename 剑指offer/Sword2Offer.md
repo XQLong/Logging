@@ -1350,6 +1350,24 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天
 
 ### 代码示例
 
+```
+import java.lang.Math;
+public class Solution {
+    public int FindGreatestSumOfSubArray(int[] array) {
+        int len = array.length;
+        int curMax = array[0], Sum = array[0], ind =1;
+        while(ind<len){
+            if(Sum<0) Sum = 0;
+            Sum += array[ind];
+            curMax = Math.max(Sum,curMax);
+            ind++;
+        }
+        return curMax;
+    }
+}
+```
+
+
 
 
 
