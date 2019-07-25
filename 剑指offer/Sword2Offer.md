@@ -1239,6 +1239,25 @@ public class Solution {
 
 - 最直观的思路，直接对数组进行排序后取前K个值即可（但是题目可能会要求不能使用类库中的排序算法）；
 - 使用优先队列维护一个大小的K的小顶堆；
-- 利用类似快速排序中对数组进行划分的过程
+- 利用类似快速排序中对数组进行划分的过程来求取。
 
 ### 代码示例
+
+- 直接排序
+
+```
+import java.util.Arrays;
+import java.util.ArrayList;
+public class Solution {
+    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
+        ArrayList<Integer> res = new ArrayList<>();
+        int len = input.length;
+        if(len<k) return res;
+        Arrays.sort(input);
+        for(int i=0;i<k;i++){
+            res.add(input[i]);
+        }
+        return res;
+    }
+}
+```
