@@ -1353,7 +1353,7 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天
 - 若`sum[k]>=0`,`sum[k+1]=sum[k]+A[k+1]`；
 - 若`sum[k]<0`,`sum[k+1]=A[k+1]`。
 
-使用`curMax`来保存当前最大连续子数组和,每次`curMax`的求取在上一个`curMax`和`Sum`之间取大者。通俗地讲，如果前K项的累加和Sum<0，加上后面的第K+1项array[k+1]后只会小于array[k+1]，即连续子数组在K项出断裂，curMax
+使用`curMax`来保存当前最大连续子数组和,每次`curMax`的求取在上一个`curMax`和`Sum`之间取大者。通俗地讲，如果前K项的累加和Sum<0，加上后面的第K+1项array[k+1]后只会小于array[k+1]，即连续子数组在K项出断裂，将sum置为0，curMax取当前curMax和array[k+1]中较大的。
 
 ### 代码示例
 
