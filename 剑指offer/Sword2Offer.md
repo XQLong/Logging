@@ -1176,6 +1176,34 @@ public class Solution {
 
 ### 代码示例
 
+- HashMap统计重复
+
+```
+import java.util.HashMap;
+public class Solution {
+    public int MoreThanHalfNum_Solution(int [] array) {
+        int len = array.length;
+        if(len==0) return 0;
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for(int i=0;i<len;i++){
+            if(!map.containsKey(array[i])){
+                map.put(array[i],1);
+                if(1>len/2) return array[0];
+            }else{
+                int vote = map.get(array[i]);
+                vote++;
+                if(vote>len/2) return array[i];
+                map.put(array[i],vote);
+            }
+        }
+        return 0;
+    }
+}
+```
+
+
+- Moore Vote方法
+
 ```
 public class Solution {
     public int MoreThanHalfNum_Solution(int [] array) {
