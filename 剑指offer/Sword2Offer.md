@@ -1059,6 +1059,35 @@ public class Solution {
 
 ### 代码示例
 
+```
+public class Solution {
+    TreeNode leftHead;
+    TreeNode rightHead;
+    public TreeNode Convert(TreeNode pRootOfTree) {
+        inorderTraversal(pRootOfTree);
+        return leftHead;
+    }
+    //对二叉树进行中序遍历,形成双向链表
+    public void inorderTraversal(TreeNode root){
+        if(root==null) return;
+        inorderTraversal(root.left);
+        if(leftHead==null&&rightHead==null){
+            leftHead = root;
+            rightHead = root;
+        }else{
+            root.left = rightHead;
+            rightHead.right = root;
+            rightHead = root;
+        }
+        inorderTraversal(root.right);
+    }
+}
+```
+
+## 27、字符串的排列
 
 
 
+### 解答思路
+
+### 代码示例
