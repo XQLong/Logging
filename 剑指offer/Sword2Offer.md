@@ -1105,6 +1105,48 @@ public class Solution {
 
 </div>
 
-其中题目用例测试结果会对返回字符串集合中的字符串先后顺序有要求，在对字符进行替换时，要保证其它字符的相对位置不变。例如对于字符串“abc”现要使用ind=2位置的'c'替换ind=0位置的'a',则替换后为“cab”
+其中题目用例测试结果会对返回字符串集合中的字符串先后顺序有要求，在对字符进行替换时，要保证其它字符的相对位置不变。例如对于字符串“abc”现要使用ind=2位置的'c'替换ind=0位置的'a',则替换后为“cab”,a和b的相对位置不变。
 
 ### 代码示例
+
+```
+import java.util.ArrayList;
+public class Solution {
+    ArrayList<String> res = new ArrayList<String>();
+    public ArrayList<String> Permutation(String str) {
+        char[] chars = str.toCharArray();
+        int len = chars.length;
+        if(len==1){
+            res.add(str);
+            return res;
+        }
+        getStringArr(str,0,chars,len);
+        return res;
+    }
+    public void getStringArr(String str,int p,char[] chars,int len){
+        if(p==len-1) return;
+        ArrayList<String> arr = new ArrayList<>();
+        for(int i=p;i<len;i++){
+            String s = String.valueOf(str.charAt(i));
+            if(!arr.contains(s)) {
+                arr.add(s);
+                String child = exchange(str,p,i);
+                if(p==len-2) res.add(child);
+                getStringArr(child,p+1,child.toCharArray(),len);
+            }
+            
+        }
+    }
+    //
+    public String exchange(String str,int ind1,int ind2){
+        if(ind1==ind2) return str;
+        String res = "";
+        String p1 = str.substring(0,ind1);
+        String p2 = str.substring(ind1,ind2);
+        String p3 = str.substring(ind2,ind2+1);
+        String p4 = str.substring(ind2+1,str.length());
+        res = p1+p3+p2+p4;
+        return res;
+    }
+}
+```
