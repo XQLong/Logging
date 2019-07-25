@@ -915,6 +915,8 @@ public class Solution {
 - 任意节点的左、右子树也分别是二叉查找树；
 - 没有键值相等的节点。
 
+<div align="center">
+
 ![BinarySearchTree](https://github.com/XQLong/java_workplace/blob/master/img/BinarySearchTree.png)
 
 算法思想：首先根据后续遍历的特点找到二叉树的根节点及其左右子树上的节点，验证左右子树是的所有节点都满足与二叉搜索树根节点的大小关系。
@@ -1045,7 +1047,13 @@ public class Solution {
 
 ### 解答思路
 
-二叉搜索树中序遍历的顺序便是二叉搜索树节点按从小到大的排序顺序。对二叉搜索树进行中序遍历，分别使用leftHead和rightHead记录当前重构的双向链表的左边头和                                     
+二叉搜索树中序遍历的顺序便是二叉搜索树节点按从小到大的排序顺序。对二叉搜索树进行中序遍历，分别使用leftHead和rightHead记录当前重构的双向链表的左边头和右边头位置，依次进行节点连接。
+
+<div align="center">
+
+    <img src="https://github.com/XQLong/java_workplace/blob/master/img/BSTDoubleLink.png"></img>
+
+</div>                                     
 
 ### 代码示例
 
