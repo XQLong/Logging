@@ -2,6 +2,8 @@
 
 按照牛客网剑指offer题库的顺序，刷题相关笔记记录如下，详细代码可以参考	[XQL剑指offer笔记](https://github.com/XQLong/java_workplace/tree/master/src/Sword2Offer)。
 
+（注：相关）
+
 ## 1、二维数组查找
 
 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
@@ -993,6 +995,49 @@ public class Solution {
 </div>
 
 ### 代码示例
+
+```
+public class Solution {
+    public RandomListNode Clone(RandomListNode pHead)
+    {
+        if(pHead==null) return null; 
+        insertCopyNode(pHead);
+        copyNodeRandom(pHead);
+        return breakNode(pHead);
+    }
+    //在每个节点后面插入复制的节点
+    public RandomListNode insertCopyNode(RandomListNode pHead){
+        RandomListNode node = new RandomListNode(pHead.label);
+        RandomListNode left = pHead.next;
+        pHead.next = node;
+        if(left!=null) node.next = insertCopyNode(left);
+        return pHead;
+    }
+    //对复制节点的 random 链接进行赋值
+    public void copyNodeRandom(RandomListNode pHead){
+        RandomListNode cur = pHead;
+        RandomListNode curCopy = pHead.next;
+        while(cur!=null){
+            curCopy.random = cur.random!=null?cur.random.next:null;
+            cur = curCopy.next;
+            curCopy = cur!=null?cur.next:null;
+        }
+    }
+    //链表拆分
+    public RandomListNode breakNode(RandomListNode pHead){
+        RandomListNode cur = pHead;
+        RandomListNode curCopy = pHead.next;
+        RandomListNode res = pHead.next;
+        while(cur!=null){
+            cur.next = curCopy.next;
+            cur = curCopy.next;
+            curCopy.next = cur!=null?cur.next:null;
+            curCopy = cur!=null?cur.next:null;
+        }
+        return res;
+    }
+}
+```
 
 
 
