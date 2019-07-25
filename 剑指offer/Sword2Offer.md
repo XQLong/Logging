@@ -1090,6 +1090,21 @@ public class Solution {
 
 ### 解答思路
 - 可以直接穷举所有可能，使用HashSet的性质来去除重复字符串；
-- 可以使用下图所示的递归思想，不断递归交换字符串中字符的位置来得到字符组成的所有的字符串组合，每一层迭代使用一个list数组来存储当前交换字符之前已出现的字符，若当前字符存在于list中则跳过，从而避免重复字符串造成的重复结果。
+- 可以使用下图所示的递归思想，不断递归交换字符串中字符的位置来得到字符组成的所有的字符串组合，每一层迭代使用一个list数组来存储当前交换字符之前已出现的字符，若当前字符存在于list中则跳过，从而避免重复字符串造成的重复结果。在没有重复的情况下：
+
+<div align="center">
+
+    <img src="https://github.com/XQLong/java_workplace/blob/master/img/StringSort.png"></img>
+
+</div>
+在有重复时使用`list`来保存同一层递归中前面已经出现的字符：
+
+<div align="center">
+
+    <img src="https://github.com/XQLong/java_workplace/blob/master/img/StringSort1.png"></img>
+
+</div>
+
+其中题目用例测试
 
 ### 代码示例
