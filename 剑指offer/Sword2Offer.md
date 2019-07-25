@@ -1137,7 +1137,7 @@ public class Solution {
             
         }
     }
-    //
+    //字符替换
     public String exchange(String str,int ind1,int ind2){
         if(ind1==ind2) return str;
         String res = "";
@@ -1150,3 +1150,9 @@ public class Solution {
     }
 }
 ```
+
+## 28、
+
+### 解答思路
+
+### 代码示例
