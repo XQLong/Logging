@@ -919,6 +919,8 @@ public class Solution {
 
 ![BinarySearchTree](https://github.com/XQLong/java_workplace/blob/master/img/BinarySearchTree.png)
 
+</div>
+
 算法思想：首先根据后续遍历的特点找到二叉树的根节点及其左右子树上的节点，验证左右子树是的所有节点都满足与二叉搜索树根节点的大小关系。
 对数组进行递归验证所有子树，当所有子树都满足时，则该数组为某二叉搜索树的后续遍历序列。
 
