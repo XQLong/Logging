@@ -984,6 +984,12 @@ public class Solution {
 
 ### 解答思路
 
+本题解答的技巧性较强，算法主要步骤分为以下三步：
+
+<div align="center">
+<img src="https://github.com/XQLong/java_workplace/blob/master/img/copyRandomListNode.png"></img>
+</div>
+
 ### 代码示例
 
 
