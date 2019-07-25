@@ -1242,6 +1242,8 @@ public class Solution {
 - 使用优先队列PriorityQueue维持一个大小为K的大顶堆，过程如下：在添加一个元素之后，如果大顶堆的大小大于 K，那么需要将大顶堆的堆顶元素去除。；
 - 利用类似快速排序中对数组进行划分的过程来求取。
 
+相关排序算法的
+
 ### 代码示例
 
 - 直接排序
@@ -1263,7 +1265,7 @@ public class Solution {
 }
 ```
 
-- 维持大小为K的大顶堆
+- ==维持大小为K的大顶堆==
 
 ```
 import java.util.PriorityQueue;
@@ -1288,7 +1290,7 @@ public class Solution {
 }
 ```
 
-- 使用快速排序思想
+- ==使用快速排序思想==
 
 ```
 import java.util.ArrayList;
