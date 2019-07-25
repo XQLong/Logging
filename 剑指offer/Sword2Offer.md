@@ -1239,7 +1239,7 @@ public class Solution {
 
 - 最直观的思路，直接对数组进行排序后取前K个值即可（但是题目可能会要求不能使用类库中的排序算法）；
 - 使用优先队列PriorityQueue实现一个小顶堆；
--  使用优先队列PriorityQueue维持一个大小为K的大顶堆；
+- 使用优先队列PriorityQueue维持一个大小为K的大顶堆；
 - 利用类似快速排序中对数组进行划分的过程来求取。
 
 ### 代码示例
@@ -1262,3 +1262,30 @@ public class Solution {
     }
 }
 ```
+
+- 维持大小为K的大顶堆
+
+```
+import java.util.PriorityQueue;
+import java.util.ArrayList;
+public class Solution {
+    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
+        ArrayList<Integer> res = new ArrayList<>();
+        int len = input.length;
+        if(len<k||k==0) return res;
+        PriorityQueue<Integer> queue = new PriorityQueue<Integer>((o1,o2)->(o2-o1));
+        for(int i=0;i<len;i++){
+            queue.offer(input[i]);
+            if(queue.size()>k){
+                queue.poll();
+            }
+        }
+        while(!queue.isEmpty()){
+            res.add(queue.poll());
+        }
+        return res;
+    }
+}
+```
+
+
