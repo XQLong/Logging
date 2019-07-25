@@ -955,8 +955,34 @@ public class Solution {
 ### 代码示例
 
 ```
-
+import java.util.ArrayList;
+public class Solution {
+    ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+    public ArrayList<ArrayList<Integer>> FindPath(TreeNode root,int target) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        findPath(root,target,arr);
+        return res;
+    }
+    public void findPath(TreeNode root,int target,ArrayList<Integer> arr) {
+        if(root==null) return;
+        ArrayList<Integer> array = new ArrayList<>(arr);
+        int value = root.val;
+        if(value>target) return;
+        else {
+            array.add(value);
+            if(target==value&&root.left==null&&root.right==null) res.add(array);
+            if(root.left!=null) findPath(root.left,target-value,array);
+            if(root.right!=null) findPath(root.right,target-value,array);
+        }
+    }
+}
 ```
+
+## 25、复杂链表的复制
+
+### 解答思路
+
+### 代码示例
 
 
 
