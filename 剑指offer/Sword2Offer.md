@@ -1522,6 +1522,29 @@ public class Solution {
 
 ### 代码示例
 
+```
+import java.lang.Math;
+public class Solution {
+    public int GetUglyNumber_Solution(int index) {
+        if(index==0) return 0;
+        int[] arr = new int[index+1];
+        arr[1] = 1;
+        //定义三个索引值分别记录因子2,3,5的当前搜索索引
+        int p2 = 1, p3 = 1, p5 = 1;
+        int p = 2;    //当前确定的丑数位置
+        while(p<=index){
+            arr[p] = Math.min(arr[p2]*2,Math.min(arr[p3]*3,arr[p5]*5));
+            if(arr[p]==arr[p2]*2) p2++;
+            if(arr[p]==arr[p3]*3) p3++;
+            if(arr[p]==arr[p5]*5) p5++;
+            p++;
+        }
+        return arr[index];
+    }
+}
+```
+
+
 
 
 
