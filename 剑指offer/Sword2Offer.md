@@ -1518,7 +1518,7 @@ public class Solution {
     <img src="https://github.com/XQLong/java_workplace/blob/master/img/UglyNumber.png"></img>
 </div> 
 
-分别使用三个索引值p1
+分别使用三个索引值p1、
 
 ### 代码示例
 
