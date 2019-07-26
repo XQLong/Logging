@@ -1445,7 +1445,7 @@ public class Solution {
 于是的到最小整数为：321323
 ````
 
-通过这种类似投票的途径得到vote[]，vote对应位置的值即为number数组中相应整数的vote值，而vote值代表了number数组中
+通过这种类似投票的途径得到vote[]，vote对应位置的值即为number数组中相应整数的vote值。
 
 ### 代码示例
 
