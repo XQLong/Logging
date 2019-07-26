@@ -1450,7 +1450,45 @@ public class Solution {
 ### 代码示例
 
 - 自己写的low代码:
-- 更优雅的实现
+
+```
+public class Solution {
+    public String PrintMinNumber(int [] numbers) {
+        int len = numbers.length;
+        int[] vote = new int[len];
+        String res = "";
+        for(int i=0;i<len;i++){
+            for(int j=i+1;j<len;j++){
+                if(isLarge(numbers[i],numbers[j])){
+                    vote[i]++;
+                }else{
+                    vote[j]++;
+                }
+            }
+        }
+        String[] strs = new String[len];
+        for(int i=0;i<len;i++){
+            strs[vote[i]] = String.valueOf(numbers[i]);
+        }
+        for(String s:strs) res += s;
+        return res;
+    }
+    //判断整数a和b组合成的新整数ab和ba的大小，ab>ba返回true;
+    public boolean isLarge(int a,int b){
+        String sa = String.valueOf(a);
+        String sb = String.valueOf(b);
+        return Long.valueOf(sa+sb)>Long.valueOf(sb+sa)?true:false;
+    }
+}
+```
+
+- ==更优雅的实现==
+
+```
+
+```
+
+
 
 
 
