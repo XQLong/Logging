@@ -1511,6 +1511,15 @@ public class Solution {
 
 ### 解答思路
 
+解题思路为如果已知了n个丑数，第n+1个丑数必然是前面的某个丑数乘以2，或者乘以3，或者乘以5。
+至于是谁，就是都尝试一下，取最小。如下图:
+
+<div align="center">
+    <img src="https://github.com/XQLong/java_workplace/blob/master/img/UglyNumber.png"></img>
+</div> 
+
+分别使用三个索引值p1
+
 ### 代码示例
 
 
