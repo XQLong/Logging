@@ -1518,7 +1518,7 @@ public class Solution {
     <img src="https://github.com/XQLong/java_workplace/blob/master/img/UglyNumber.png"></img>
 </div> 
 
-分别使用三个索引值p1、
+分别使用三个索引值p1、p2、p3来分别记录因子1、2、3
 
 ### 代码示例
 
