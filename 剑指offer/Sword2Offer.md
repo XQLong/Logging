@@ -1553,7 +1553,26 @@ public class Solution {
 ### 代码示例
 
 - 使用一个长度为128的整型数组存储各个字符出现的次数：
-- 使用BitSet来存储
+
+```
+public class Solution {
+    public int FirstNotRepeatingChar(String str) {
+        int[] arr = new int[128];
+        char[] chars = str.toCharArray();
+        for(int i=0;i<chars.length;i++){
+            int index = chars[i]-' ';
+            arr[index]++;
+        }
+        for(int i=0;i<chars.length;i++){
+            int index = chars[i]-' ';
+            if(arr[index]==1) return i;
+        }
+        return -1;
+    }
+}
+```
+
+- 使用BitSet来存储，降低空间复杂度：
 
 
 
