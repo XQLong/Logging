@@ -1550,6 +1550,9 @@ public class Solution {
 
 ### 解答思路
 
+- 使用整型数组记录每个字符出现的次数；
+- 考虑到仅需考虑每个字符出现的`0，1，>1`三种情况，故可以使用三个比特位来存储这些信息，从而减小空间复杂度。
+
 ### 代码示例
 
 - 使用一个长度为128的整型数组存储各个字符出现的次数：
@@ -1574,6 +1577,26 @@ public class Solution {
 
 - 使用BitSet来存储，降低空间复杂度：
 
+```
+import java.util.BitSet;
+public class Solution {
+    public int FirstNotRepeatingChar(String str) {
+        BitSet set1 = new BitSet(128);    //记录是否出现过
+        BitSet set2 = new BitSet(128);    //记录是否出现超过一次
+        char[] chars = str.toCharArray();
+        for(int i=0;i<chars.length;i++){
+            int ind = chars[i]- ' ';
+            if(!set1.get(ind))  set1.set(ind);
+            else set2.set(ind);
+        }
+        for(int i=0;i<chars.length;i++){
+            int ind = chars[i]- ' ';
+            if(set1.get(ind)&&!set2.get(ind))  return i;
+        }
+        return -1;
+    }
+}
+```
 
 
 
