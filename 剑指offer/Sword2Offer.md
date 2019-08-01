@@ -1711,6 +1711,28 @@ public class Solution {
 
 - 二分查找
 
+```
+public class Solution {
+    int res = 0;
+    public int GetNumberOfK(int [] array , int k) {
+        int len = array.length;
+        binarySearch(array,k,0,len-1);
+        return res;
+    }
+    public void binarySearch(int [] array , int k,int l,int r){
+        if(l>r) return;
+        int len = array.length;
+        int mid = (l+r)/2;
+        if(array[mid]==k){
+            res++;
+            binarySearch(array,k,l,mid-1);
+            binarySearch(array,k,mid+1,r);
+        }
+        else if(array[mid]>k) binarySearch(array,k,l,mid-1);
+        else binarySearch(array,k,mid+1,r);
+    }
+}
+```
 
 
 
