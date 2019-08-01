@@ -1877,7 +1877,7 @@ public class Solution {
         int[] arr1 = new int[len];
         int[] arr2 = new int[len];
         for(int i=0;i<len;i++) res = res^array[i];
-        int p = (res&(res-1))^res;	//此处利用了n&(n-1)的性质，按位与后将n为1的
+        int p = (res&(res-1))^res;	//此处利用了n&(n-1)的性质，按位与后将n最低位为1的位置为0的性质，再与原值
         for(int i=0;i<len;i++){
             if((p&array[i])==0) arr1[i] = array[i];
             else arr2[i] = array[i];
