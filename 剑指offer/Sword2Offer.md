@@ -1821,9 +1821,33 @@ public class Solution {
 
 ### 解答思路
 
+首先平衡二叉搜索树（Self-balancing binary search tree）又被称为AVL树（有别于AVL算法）,是一种二叉排序树，且具有以下性质：
 
+- 它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1；
+- 并且左右两个子树都是一棵平衡二叉树。
+
+解答思路为利用上题所得的求取二叉树深度的函数，递归求取每个节点的左右子节点是否满足
+平衡二叉树的性质，一旦不满足则返回`false`,全部满足则返回`true`。
 
 ### 代码示例
+
+```
+import java.lang.Math;
+public class Solution {
+    public boolean IsBalanced_Solution(TreeNode root) {
+        return isBalanced(root);
+    }
+    public boolean isBalanced(TreeNode root){
+        if(root==null) return true;
+        int res = Math.abs(getTreeHeight(root.left)-getTreeHeight(root.right));
+        if(res>1) return false;
+        return isBalanced(root.left)&&isBalanced(root.right);
+    }
+    public int getTreeHeight(TreeNode root){
+        return root==null?0:1+Math.max(getTreeHeight(root.left),getTreeHeight(root.right));
+    }
+}
+```
 
 
 
