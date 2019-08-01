@@ -1751,8 +1751,21 @@ public class Solution {
 - 直接递归求取
 
 ```
-
+import java.lang.Math;
+public class Solution {
+    public int TreeDepth(TreeNode root) {
+        return getDeep(root);
+    }
+    public int getDeep(TreeNode node){
+        //每次求取在节点左子树和右子树中深度较大者
+        return node==null?0:1+Math.max(getDeep(node.left),getDeep(node.right));
+    }
+}
 ```
+
+- 层次遍历求取
+
+
 
 
 
