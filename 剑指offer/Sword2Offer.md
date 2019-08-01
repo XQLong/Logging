@@ -1766,9 +1766,33 @@ public class Solution {
 - 层次遍历求取
 
 ```
-
+import java.util.LinkedList;
+import java.util.Queue;
+public class Solution {
+    int deep = 0;
+    public int TreeDepth(TreeNode root) {
+        LevelTravel(root);
+        return deep;
+    }
+    public void LevelTravel(TreeNode node){
+        Queue<TreeNode> queue =new LinkedList<>();
+        if(node==null) return;
+        queue.add(node);
+        while (!queue.isEmpty()){
+            this.deep++;
+            int cnt = queue.size();
+            while (cnt>0){
+                TreeNode cur = queue.poll();
+                if(cur.left!=null)  queue.add(cur.left);
+                if(cur.right!=null)  queue.add(cur.right);
+                cnt--;
+            }
+        }
+    }
+}
 ```
 
+- 
 
 
 
