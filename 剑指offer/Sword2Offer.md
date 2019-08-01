@@ -1855,8 +1855,41 @@ public class Solution {
 
 ### 解答思路
 
+本题主要利用整数的位运算来进行解答，主要依据以下两点：
+
+- 任何数字与其本身异或运算为0，与0异或为其本身。于是可以得到若在数组中只有一个数字出现一次，
+而其他数字出现两次，则数组中所有值的异或的最终结果为不重复的值。那么对于有两个不重复值的数组
+求取不重复值，则问题归结于合理的将数组分为两个子数组，满足两个不重复值分别在两个不同数组中，且重复
+出现的值应该在同一数组中。
+
+- 为了按照上述要求将数组合理的划分为两个子数组，我们先将原数组中所有的值进行异或计算，显然所得值
+为两个仅出现一次的两个值的异或结果。由于两个值不同，因而异或结果必然不为0，即存在某位为1,同时可以
+推断在该位上两个数一个为1，另一个为0。故可以以此位的值为依据对数组进行划分，将两不重复值分开在
+不同数组中，而有重复值的数也自然而然的在同一个数组中了。
+
 ### 代码示例
 
+```
+public class Solution {
+    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
+        int len = array.length;
+        int res=0;
+        int[] arr1 = new int[len];
+        int[] arr2 = new int[len];
+        for(int i=0;i<len;i++) res = res^array[i];
+        int p = (res&(res-1))^res;
+        for(int i=0;i<len;i++){
+            if((p&array[i])==0) arr1[i] = array[i];
+            else arr2[i] = array[i];
+        }
+        int res1 = 0 ,res2 = 0;
+        for(int i=0;i<len;i++) res1 = res1^arr1[i];
+        for(int i=0;i<len;i++) res2 = res2^arr2[i];
+        num1[0] = res1;
+        num2[0] = res2;
+    }
+}
+```
 
 
 
