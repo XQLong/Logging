@@ -1659,7 +1659,7 @@ public class Solution {
 
 <div align="center">
 
-![title](https://github.com/XQLong/java_workplace/blob/master/img/FirstCommonListNode.png）   
+ 
 
 </div> 
 
