@@ -1792,7 +1792,10 @@ public class Solution {
 }
 ```
 
-- 
+- 前序遍历求取
+
+
+
 
 
 
