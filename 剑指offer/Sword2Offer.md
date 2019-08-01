@@ -1794,6 +1794,26 @@ public class Solution {
 
 - 前序遍历求取
 
+```
+public class Solution {
+    int deep = 0;
+    public int TreeDepth(TreeNode root) {
+        preTravel(root,0);
+        return deep;
+    }
+    public void preTravel(TreeNode node,int cnt){
+        if(node!=null){
+            cnt++;
+        } else {
+            cnt--;
+            return;
+        }
+        deep = Math.max(deep,cnt);
+        preTravel(node.left,cnt);
+        preTravel(node.right,cnt);
+    }
+}
+```
 
 
 
