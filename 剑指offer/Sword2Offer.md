@@ -1608,6 +1608,7 @@ public class Solution {
 - 结果是对1000000007取模的输出，cnt需定义为long型，再将结果转为int型返回；
 - 逆序对的统计在归并排序的归并过程中统计：
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/08/01/1564626600902-1564626601162.png)
 
 
 ### 代码示例
