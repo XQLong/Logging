@@ -1657,8 +1657,11 @@ public class Solution {
 
 ### 解答思路
 
+<div align="center">
 
-![title](https://github.com/XQLong/java_workplace/blob/master/img/FirstCommonListNode.png）    
+![title](https://github.com/XQLong/java_workplace/blob/master/img/FirstCommonListNode.png）   
+
+</div> 
 
 
 设 A 的长度为` a + c`，B 的长度为` b + c`，其中 c 为尾部公共部分长度，可知` a + c + b = b + c + a`。
