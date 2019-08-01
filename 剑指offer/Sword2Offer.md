@@ -1604,10 +1604,44 @@ public class Solution {
 
 ### 解答思路
 
-使用归并排序算法对数组进行排序在排序过程中计算逆序对个数。
+使用归并排序算法对数组进行排序在排序过程中计算逆序对个数。需注意的是
 
 ### 代码示例
 
+```
+public class Solution {
+    long cnt = 0;
+    int[] arr;
+    public int InversePairs(int [] array) {
+        int len = array.length;
+        arr = new int[len];
+        divide(array,0,len-1);
+        long y = 1000000007L;
+        return (int)(cnt%y);
+    }
+    public void divide(int[] array,int l, int r){
+        if(l>=r) return;
+        int mid = (l+r)/2;
+        divide(array,l,mid);
+        divide(array,mid+1,r);
+        merge(array,l,r,mid);
+    }
+    public void merge(int[] array,int l, int r, int mid){
+        if(mid<l||mid>r) return;
+        int ind1 = l ,ind2 = mid+1;
+        for(int i=l;i<=r;i++){
+            if(ind1>mid) arr[i] = array[ind2++];
+            else if(ind2>r) arr[i] = array[ind1++];
+            else if(array[ind1]<=array[ind2]) arr[i] = array[ind1++];
+            else{
+                arr[i] = array[ind2++];
+                this.cnt += (mid-ind1+1); 
+            } 
+        }
+        for(int j=l;j<=r;j++) array[j] = arr[j];
+    }
+}
+```
 
 
 
