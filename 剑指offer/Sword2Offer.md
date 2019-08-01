@@ -1694,6 +1694,21 @@ public class Solution {
 
 ### 代码示例
 
+- 直接统计
+
+```
+public int GetNumberOfK1(int [] array , int k){
+        int cnt = 0;
+        for (int i=0;i<array.length;i++){
+            if(array[i]==k) cnt++;
+            if(array[i]>k) break;
+        }
+        return cnt;
+}
+```
+
+
+
 
 
 
