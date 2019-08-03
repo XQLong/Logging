@@ -8,5 +8,7 @@
 
 - Java内部的容器
 
+
+
 主要包括Collection和Map两种，Collection存储着对象的集合，而Map存储着键值对（两个对象）映射表。
 
