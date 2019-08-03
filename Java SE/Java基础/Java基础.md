@@ -109,7 +109,7 @@ protected用于修饰成员（对类没有意义），表示继承体系中成�
 
 ### hashcode()
 
-hashcode()返回散列值，而equals（）
+hashcode()返回散列值，而equals（）是用来判断两个对象是否等价。等价的两个对象的散列值一定相同，但
 
 
 
