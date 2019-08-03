@@ -6,4 +6,7 @@
 
 容器是Java所编写的程序，容器来自动管理对象关系，常用的如WebSphere、WebLogic、Tomcat等。
 
-- 
+- Java内部的容器
+
+主要包括Collection和Map两种，Collection存储着对象的集合，而Map存储着键值对（）
+
