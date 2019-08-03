@@ -14,5 +14,7 @@ Collection：
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/08/03/1564804991136-1564804991152.png)
 
+Map：
 
+![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/08/03/1564805101849-1564805101849.png)
 
