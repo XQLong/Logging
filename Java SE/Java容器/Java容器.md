@@ -4,4 +4,6 @@
 
 - 执行Java的应用程序：
 
-容器是Java所编写的程序，容器来
+容器是Java所编写的程序，容器来自动管理对象关系，常用的如WebSphere、WebLogic、Tomcat等。
+
+- 
