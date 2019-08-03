@@ -10,4 +10,9 @@
 
 主要包括Collection和Map两种，Collection存储着对象的集合，而Map存储着键值对（两个对象）映射表。
 
+Collection：
+
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/08/03/1564804991136-1564804991152.png)
+
+
+
