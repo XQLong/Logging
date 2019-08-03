@@ -8,7 +8,7 @@ Java最重要的特性之一就是它的内存分配系统。
 |-|-|
 |byte|1|
 |bollean|1|
-|cahr|2|
+|char|2|
 |int|4|
 |float|4|
 |double|8|
