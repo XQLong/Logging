@@ -114,7 +114,7 @@ hashcode()返回散列值，而equals（）是用来判断两个对象是否等�
 ### clone()
 
 - Cloneable
-clone()是Object的protected方法，它不是public，一个类不显式去重写clone()，其他类就
+clone()是Object的protected方法，它不是public，一个类不显式去重写clone()，其他类就不能直接调用该类实例的clone()方法。
 
 
 
