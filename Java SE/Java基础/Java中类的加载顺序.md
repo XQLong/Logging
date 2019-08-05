@@ -30,6 +30,6 @@ public class Test
 ```
 
 程序输出：
-blockA		//创建类的静态对象他t1时
+blockA		//创建类的静态对象他t1时执行非静态代码块的输出
 blockB
 blockA	
