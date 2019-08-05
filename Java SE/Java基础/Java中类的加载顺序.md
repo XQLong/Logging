@@ -5,3 +5,29 @@
 4. 父类构造函数
 5. 子类非静态对象和非静态代码块
 6. 子类构造函数
+
+例1：
+
+```
+public class Test
+{
+    //类的静态对象
+    public static Test t1 = new Test();
+    //类的非静态代码块
+    {
+        System.out.println("blockA");
+    }
+    //类的静态代码块
+    static
+    {
+        System.out.println("blockB");
+    }
+    public static void main(String[] args)
+    {
+        Test t2 = new Test();
+    }
+}
+```
+
+程序输出：
+
