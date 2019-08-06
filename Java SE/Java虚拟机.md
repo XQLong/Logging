@@ -36,7 +36,7 @@ public class Test {
     }
 }
 ```
-程序开始运行main（）
+程序开始运行main（）方法，java虚拟机底层在栈空间为线程单独开辟一块
 
 <div align="center">
 
