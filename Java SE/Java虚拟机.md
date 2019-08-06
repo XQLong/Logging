@@ -44,4 +44,4 @@ public class Test {
 
 </div>
 
-栈帧：每一次
+栈帧：每一次函数的调用都会在调用栈（call stack）上维护一个独立的栈帧（stack frame），
