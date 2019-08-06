@@ -40,7 +40,7 @@ public class Test {
 
 <div align="center">
 
-![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/06/1565061363292-1565061363296.png)
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/06/1565073728856-1565073728869.png)
 
 </div>
 
