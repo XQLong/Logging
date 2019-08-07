@@ -1964,10 +1964,38 @@ public class Solution {
 
 ### 解答思路
 
-使用前后两个索引动态调整位置计算和，当两个正整数和一定时，差值越大则成绩越小，因而第一次求得和为
+使用前后两个索引动态调整位置计算和，当两个正整数和一定时，差值越大则成绩越小，因而第一次求得和为sum两个数即为最后结果。
 
 ### 代码示例
 
+```
+import java.util.ArrayList;
+public class Solution {
+    public ArrayList<Integer> FindNumbersWithSum(int [] array,int sum) {
+        int len = array.length;
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        if(len<1) return res;
+        int l=0, r=len-1;
+        int s=array[l]+array[r];
+        while(l<r){
+            while(s<sum){
+                l++;
+                s=array[l]+array[r];
+            }
+            if(s==sum){
+                res.add(array[l]);
+                res.add(array[r]);
+                return res;
+            }
+            while(s>sum){
+                r--;
+                s=array[l]+array[r];
+            }
+        }
+        return res;
+    }
+}
+```
 
 
 
