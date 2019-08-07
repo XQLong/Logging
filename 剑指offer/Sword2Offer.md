@@ -1997,6 +1997,139 @@ public class Solution {
 }
 ```
 
+## 43、左旋转字符串
+
+汇编语言中有一种移位指令叫做循环左移（ROL），现在有个简单的任务，就是用字符串模拟这个指令的运算结果。对于一个给定的字符序列S，请你把其循环左移K位后的序列输出。例如，字符序列S=”abcXYZdef”,要求输出循环左移3位后的结果，即“XYZdefabc”。是不是很简单？OK，搞定它！
+
+### 解答思路
+
+- 直接使用substring函数截取子字符串后再，倒序拼接
+- 先将左边要循环左移的k位进行翻转，S="cbaXYZdef"；再将剩下的部分进行翻转S="cbafedZYX"； 最后将整个字符串进行翻转S="XYZdefabc"。
+
+### 代码示例
+
+- 子字符串拼接
+
+```
+public class Solution {
+    public String LeftRotateString(String str,int n) {
+        int len = str.length();
+        if(len==0) return "";
+        n = n%len;
+        if(n==0) return str;
+        String str1 = str.substring(0,n);
+        String str2 = str.substring(n,len);
+        return str2+str1;
+    }
+}
+```
+
+- 字符串旋转
+```
+public class Solution {
+    public String LeftRotateString(String str,int n) {
+        int len = str.length();
+        if(len==0) return "";
+        n = n%len;
+        String res = "";
+        res = reverseString(str,0,n-1);
+        res = reverseString(res,n,len-1);
+        return reverseString(res,0,len-1);
+    }
+    public String reverseString(String str,int l,int r){
+        String res = "";
+        char[] chars = str.toCharArray();
+        while(l<r){
+            char temp = chars[l];
+            chars[l] = chars[r];
+            chars[r] = temp;
+            l++;
+            r--;
+        }
+        for(char c:chars) res += String.valueOf(c);
+        return res;
+    }
+}
+```
+
+## 44、翻转单词顺序列
+
+牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该是“I am a student.”。Cat对一一的翻转这些单词顺序可不在行，你能帮助他么？
+
+### 解答思路
+
+思路与上题类似。可先将每个单词翻转：I ma a .tneduts，再将整个字符串翻转students. a am I。
+
+### 代码示例
+
+```
+public class Solution {
+    public String ReverseSentence(String str) {
+        int len = str.length();
+        if(len<1) return "";
+        char[] chars = str.toCharArray();
+        int l = 0;
+        for(int i=0;i<len;i++){
+            if(chars[i]==' '){
+                str = reverseString(str,l,i-1);
+                l = i+1;
+            }
+        }
+        str = reverseString(str,l,len-1);
+        return reverseString(str,0,len-1);
+    }
+    public String reverseString(String str,int l,int r){
+        String res = "";
+        char[] chars = str.toCharArray();
+        while(l<r){
+            char temp = chars[l];
+            chars[l] = chars[r];
+            chars[r] = temp;
+            l++;
+            r--;
+        }
+        for(char c:chars) res += String.valueOf(c);
+        return res;
+    }
+}
+```
+
+## 45、扑克牌顺子
+
+LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)...他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子.....LL不高兴了,他想了想,决定大\小 王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就可以变成“1,2,3,4,5”(大小王分别看作2和4),“So Lucky!”。LL决定去买体育彩票啦。 现在,要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何， 如果牌能组成顺子就输出true，否则就输出false。为了方便起见,你可以认为大小王是0
+
+### 解答思路
+
+使用一个整数cnt来统计赖子的个数，将数组进行排序（可使用Array.sort方法或使用PriorityQueue），使用 赖子去补全数组中不连续的地方。
+
+### 代码示例
+
+```
+import java.util.Arrays;
+    
+public class Solution {
+    public boolean isContinuous(int [] numbers) {
+        int len = numbers.length;
+        if(len==0) return false;
+        Arrays.sort(numbers);
+        int cnt = 0;    //统计赖子个数
+        for(int i=0;i<len;i++){
+            if(numbers[i]==0){
+                cnt++;
+                continue;
+            }else{
+                if(i+1==len) break;
+                int dif = numbers[i+1]-numbers[i];
+                if(dif==0) return false;
+                cnt -= (dif-1);
+            }
+            if(cnt<0) return false;
+        }
+        return true;
+    }
+}
+```
+
 
 
 
