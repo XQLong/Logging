@@ -1911,6 +1911,34 @@ public class Solution {
 
 - 通过调整左右两个索引值求取
 
+```
+import java.util.ArrayList;
+public class Solution {
+    public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+       ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+       int l = 1, r = 2, s = 3;
+       while(r<=(sum/2)+1){
+           while(s<sum){
+               r++;
+               s += r;
+           }
+           if(s==sum){
+               ArrayList<Integer> arr = new ArrayList<>();
+               for(int i=l;i<=r;i++) arr.add(i);
+               res.add(arr);
+               s -= l;
+               l++;
+           }
+           while(s>sum){
+               s -= l;
+               l++;
+           }
+       }
+       return res;
+    }
+}
+```
+
 
 
 
