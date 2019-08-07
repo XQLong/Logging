@@ -1906,7 +1906,26 @@ public class Solution {
 - 循环暴力求取
 
 ```
-
+import java.util.ArrayList;
+public class Solution {
+    ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+    public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+       int mid = sum/2;
+       for(int i=1;i<=mid;i++){
+           findSequence(i,sum);
+       }
+       return res;
+    }
+    public void findSequence(int start,int sum){
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        int s = 0;
+        for(int i=start;s<sum;i++){
+            s += i;
+            arr.add(i);
+        }
+        if(s==sum) res.add(arr);
+    }
+}
 ```
 
 - 通过调整左右两个索引值求取
