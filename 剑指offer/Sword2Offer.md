@@ -2155,6 +2155,17 @@ public class Solution {
 
 ### 代码示例
 
+- 约瑟夫环结论
+
 ```
+public class Solution {
+    public int LastRemaining_Solution(int n, int m) {
+        if(n==1)  return 0;
+        if(n<1) return -1;
+        return (LastRemaining_Solution(n-1,m)+m)%n;
+    }
+}
 ```
+- 数组模拟
+
 
