@@ -2147,6 +2147,9 @@ Pn = (Pn-1+m)%n
 
 详细关于约瑟夫环的结论验证和推导相关过程此处省略。可参考：
 
+[约瑟夫环简要推导](URL 'https://www.jianshu.com/p/6ee5c7b21333')
+[约瑟夫环简要验证](URL 'https://www.cnblogs.com/qingergege/p/7598822.html')
+
 - 使用数组模拟整个过程
 
 ### 代码示例
