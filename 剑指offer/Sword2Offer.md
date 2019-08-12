@@ -2360,4 +2360,32 @@ public class Solution {
 
 ### 解答思路
 
+依次从左和从右遍历数组两次，分别计算当前位置左边所有数之积和右边所有数之积，最后 求取该位置左右两边之积。
+
 ### 代码示例
+
+```
+import java.util.ArrayList;
+public class Solution {
+    public int[] multiply(int[] A) {
+        int len = A.length;
+        int[] arr = new int[len];
+        int[] arr1 = new int[len];
+        int[] res = new int[len];
+        int cur = 1;
+        for(int i=0;i<len;i++){
+            cur *= A[i];
+            arr[i] = cur;
+        }
+        cur = 1;
+        for(int i=len-1;i>=0;i--){
+            cur *= A[i];
+            arr1[i] = cur;
+            if(i==0) res[i] = arr1[i+1];
+            else if(i==len-1) res[i] = arr[i-1]; 
+            else res[i] = arr[i-1]*arr1[i+1]; 
+        }
+        return res;
+    }
+}
+```
