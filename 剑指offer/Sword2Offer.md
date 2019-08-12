@@ -2252,6 +2252,42 @@ public class Solution {
 
 ### 解答思路
 
-先进行符号位判断，然后利用字符的减法来确定字符所表示的值是否为数字，利用十进制输的定义来还原数字。
+首先对字符串的第一位进行符号判断，然后遍历字符串判断各个位置的值是否在字符‘0’至‘9’之间（包含‘0’和‘9’），最后 按照十进制数的表示方法得到整数。
 
 ### 代码示例
+
+```
+public class Solution {
+    public int StrToInt(String str) {
+        char[] chars = str.toCharArray();
+        int len = chars.length;
+        if(len<=0) return 0;
+        int symbol = 1;
+        //判断符号位
+        if(chars[0]=='+'){
+            symbol = 1;
+            chars[0] = '0';
+        }else if(chars[0]=='-'){
+            symbol = -1;
+            chars[0] = '0';
+        }else if(isNumber(chars[0])){
+            symbol = 1;
+        }else{
+            return 0;
+        }
+        int res = 0;
+        int p = 1;
+        for(int i=len-1;i>=0;i--){
+            if(!isNumber(chars[i])) return 0;
+            res += p*(chars[i]-'0'); 
+            p *= 10;
+        }
+        return res*symbol;
+    }
+    public boolean isNumber(char c){
+        int a = c - '0'; 
+        if(a>=0&&a<=9) return true;
+        else return false;
+    }
+}
+```
