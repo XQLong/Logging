@@ -2207,7 +2207,15 @@ public class Solution {
 
 ### 解答思路
 
-使用递归将原问题转化为子问题进行处理，具体地将
+使用递归将原问题转化为子问题进行处理，具体地将求1+2+3+...+n，转化为n加1+2+3+...+n-1两部分，以此类推。
 
 ### 代码示例
 
+```
+public class Solution {
+    public int Sum_Solution(int n) {
+        if(n==0) return 0;
+        return n+Sum_Solution(n-1);
+    }
+}
+```
