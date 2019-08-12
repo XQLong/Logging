@@ -2330,3 +2330,26 @@ public class Solution {
 ```
 
 - 不使用额外空间
+
+```
+public class Solution {
+    public boolean duplicate(int numbers[],int length,int [] duplication) {
+        for(int i=0;i<length;i++){
+            while(i!=numbers[i]){
+                if(numbers[i] == numbers[numbers[i]]) {
+                    duplication[0] = numbers[i];
+                    return true;
+                }
+                swap(numbers,i,numbers[i]);
+            }
+        }
+        return false;
+    }
+    public void swap(int arr[],int l,int r){
+        if(l==r) return;
+        int temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+    }
+}
+```
