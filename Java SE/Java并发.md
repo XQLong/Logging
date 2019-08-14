@@ -161,7 +161,7 @@ Thread类提供了setPriority(int newpriority)、getPriority()方法来设置和
 
 ## 四、线程同步
 
-线程安全
+### 线程安全
 
 
 
