@@ -140,7 +140,12 @@ Thread类的静态sleep()方法来让正在执行的线程暂停一段时间，�
 
 sleep()方法的两种重载形式：
 - static void sleep(long mills):让正在执行的线程暂停mills毫秒，并进入阻塞状态；
-- static void sleep(long mills,long nano)
+- static void sleep(long mills,long nanos)
+
+### 线程让步
+
+yield()方法也是Thread
+
 
 
 
