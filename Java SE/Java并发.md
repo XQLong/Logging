@@ -171,7 +171,7 @@ java的多线程支持引入同步监视器来解决文件并发访问所造成�
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/14/1565792361050-1565792361056.png)
 
-obj就是
+obj就是同步监视器，线程开始执行同步代码块之前，必须先获得对同步监视器的锁定。逻辑：“加锁~修改~释放锁”。
 
 
 
