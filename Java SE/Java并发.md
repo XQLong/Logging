@@ -119,7 +119,7 @@ public class JoinThread extends Thread{
 }
 ```
 
-以上程序中一共有三个线程，在主线程的循环变量i等于20时
+以上程序中一共有三个线程，在主线程的循环变量i等于20时，启动了名为“被join的线程”的线程，该线程不会和main线程并发执行，main线程必须
 
 
 
