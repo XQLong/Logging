@@ -40,8 +40,11 @@
 实现Runnable、Callable接口方式创建多线程的优缺点：
 
 - 线程类只实现了Runnable和Callable接口，还可以继承其他类；
+- 
 
 采用继承Thread类的方式创建多线程的优缺点：
+
+- 
 
 
 
