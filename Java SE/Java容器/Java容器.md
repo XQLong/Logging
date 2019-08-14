@@ -18,5 +18,9 @@ Map：
 
 ![title](https://raw.githubusercontent.com/XQLong/Logging/master/img/2019/08/03/1564805101849-1564805101849.png)
 
+## Collection
+
+存储
+
 - 
 
