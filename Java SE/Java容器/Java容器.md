@@ -28,3 +28,8 @@ Map：
 -HashSet:基于Hash表实现，支持快速查找，但不支持有序性查找。并且失去了元素的插入顺序信息，也就是说使用Iterator遍历HashSet得到的结果是不确定的。
 - LinkedHashSet：具有HashSet的查找效率，且内部使用双向链表维护元素的插入顺序。
 
+### 2、List
+
+- 
+
+
