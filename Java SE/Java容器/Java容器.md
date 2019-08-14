@@ -48,6 +48,6 @@ Map：
 基于哈希表实现。HashMap无contains方法。
 
 ### 3、HashTable
-- 和HashMap类似，但它是线程安全的，这意味着同一时刻多个线程可以同时写入HashTable并不会导致数据不一致。
+- 和HashMap类似，但它是线程安全的，这意味着同一时刻多个线程可以同时写入HashTable并不会导致数据不一致。（它是遗留类，应该尽量避免使用它，可以使用Concurrent）
 
 
