@@ -47,6 +47,13 @@
 - 劣势是因为线程类已经继承了Thread类而不能再继承其他类；
 - 优势是编写简单，可直接使用this获取当前线程。
 
+## 线程的生命周期
+
+
+
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/14/1565785133309-1565785133663.png)
+
+
 
 
 
