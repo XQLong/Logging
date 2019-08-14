@@ -35,7 +35,7 @@
 
 ### 创建线程的三种方法的对比
 
-
+实现Runnable和Callable接口的方式基本相同，知识Callable
 
 
 
