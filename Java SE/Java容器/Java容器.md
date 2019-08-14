@@ -26,5 +26,5 @@ Map：
 
 - TreeSet:基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如HashSet。HashSet的查找效率为O(1),TreeSet则为O（LogN）。
 -HashSet:基于Hash表实现，支持快速查找，但不支持有序性查找。并且失去了元素的插入顺序信息，也就是说使用Iterator遍历HashSet得到的结果是不确定的。
-- 
+- LinkedHashSet：具有HashSet的查找效率，且内部使用双向链表维护元素的插入顺序。
 
