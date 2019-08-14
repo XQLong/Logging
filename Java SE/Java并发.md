@@ -125,7 +125,12 @@ join()方法的三种重载形式:
 
 - join()：等待join的线程执行完成；
 - join(long mills)：等待被join的线程最多mills毫秒。如果在mills毫秒内被join的线程还没有执行结束，则不再等待；
-- join(long mills，int nanos)：等待被join的线程mills毫秒
+- join(long mills，int nanos)：等待被join的线程的时长最长mills毫秒加nanos毫微秒。
+
+### 后台线程
+
+
+
 
 
 
