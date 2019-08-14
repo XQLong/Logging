@@ -44,6 +44,10 @@ Map：
 ### 1、TreeMap
 基于红黑树实现
 
-### 2、Hash
+### 2、HashMap
+基于哈希表实现。HashMap无contains方法。
+
+### 3、HashTable
+- 和
 
 
