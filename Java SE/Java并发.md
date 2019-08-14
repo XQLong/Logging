@@ -29,5 +29,7 @@
 
 ### 使用Callable和Future
 - 创建Callable接口的实现类，并实现Call()方法，该call()方法将作为线程执行体，且该caLL()方法有返回值，再创建Callable类的实例；
-- 使用FutureTask类来包装Callable对象，该FutureTask对象封装了该Callable对象的call()
+- 使用FutureTask类来包装Callable对象，该FutureTask对象封装了该Callable对象的call()返回值；
+- 使用FutureTask对象作为Thread的target来创建并启动新线程；
+- 调用FutureTask对象的get()
 
