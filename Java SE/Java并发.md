@@ -124,7 +124,7 @@ public class JoinThread extends Thread{
 join()方法的三种重载形式:
 
 - join()：等待join的线程执行完成；
-- 
+- join(long mills)：等待被join的线程最多mills毫秒。如果在mills毫秒内被
 
 
 
