@@ -163,6 +163,7 @@ Thread类提供了setPriority(int newpriority)、getPriority()方法来设置和
 
 ### 线程安全
 
+在拥有共享数据的多条线程并行
 
 
 
