@@ -119,7 +119,7 @@ public class JoinThread extends Thread{
 }
 ```
 
-
+以上程序中一共有三个线程，在主线程的循环变量i等于20时
 
 
 
