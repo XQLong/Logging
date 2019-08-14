@@ -159,7 +159,9 @@ yield()方法也是Thread类提供的一个静态方法，它可以让当前正�
 Thread类提供了setPriority(int newpriority)、getPriority()方法来设置和返回指定线程的优先级，newpriority为范围在1~10之间的整数。
 
 
+## 四、线程同步
 
+线程安全
 
 
 
