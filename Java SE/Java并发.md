@@ -167,7 +167,11 @@ Thread类提供了setPriority(int newpriority)、getPriority()方法来设置和
 
 ### 同步代码块
 
-java的多线程支持引入同步监视器来解决文件并发访问
+java的多线程支持引入同步监视器来解决文件并发访问所造成的线程安全问题；
+
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/14/1565792361050-1565792361056.png)
+
+obj就是
 
 
 
