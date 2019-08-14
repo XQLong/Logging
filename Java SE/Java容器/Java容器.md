@@ -51,5 +51,7 @@ Map：
 - 和HashMap类似，但它是线程安全的，这意味着同一时刻多个线程可以同时写入HashTable并不会导致数据不一致。（它是遗留类，应该尽量避免使用它，可以使用ConcurrentHashMap来支持线程安全）。
 - HashTable中Key和Value都不允许出现null值。在HashMap中，null可以作为键，且这样的键只有一个；可以有一个或多个键所对应的值为null。当get()方法返回null值时，既可以表示HashMap中没有该键，也可以表示该键对应的值为null。因此在HashMap中不能由get()方法来判断HashMap中是否存在某个键，二应该用containKey（）方法来判断。
 
+### 4、LinkedHashMap
+使用双向链表来维护元素的顺序，顺序为插入顺序
 
 
