@@ -28,5 +28,6 @@
 采用Runnable接口的方式创建的多个线程可以共享线程类的实例变量（多个线程共享线程的target）。
 
 ### 使用Callable和Future
-- 创建Callable接口的实现类，并实现Call()方法，该call()方法
+- 创建Callable接口的实现类，并实现Call()方法，该call()方法将作为线程执行体，且该caLL()方法有返回值，再创建Callable类的实例；
+- 
 
