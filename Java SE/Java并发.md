@@ -22,4 +22,4 @@
 
 ### 实现Runnable接口
 - 定义Runnable接口的实现类，并重写该接口的run()方法，该run()方法同样是线程的执行体；
-- 创建Runnable实现类的实例，
+- 创建Runnable实现类的实例，并以此作为Thread的Target来创建Thread对象，该Thread对象才是
