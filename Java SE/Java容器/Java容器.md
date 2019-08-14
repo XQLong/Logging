@@ -34,4 +34,7 @@ Map：
 - Vector：和ArrayList类似，但它是线程安全的；
 - LinkedList：基于双向链表实现，只能顺序访问，但可以在链表中快速地插入和删除元素。不仅如此，LinkedList还可以作栈，队列和双向队列。
 
+### 3、Queue
+
+- LinkedList：可以用来实现
 
