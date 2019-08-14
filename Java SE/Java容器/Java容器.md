@@ -30,6 +30,7 @@ Map：
 
 ### 2、List
 
-- 
+- ArrayList：基于动态数组实现，支持随机访问；
+- Vector：和ArrayList
 
 
