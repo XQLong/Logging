@@ -25,5 +25,8 @@
 - 创建Runnable实现类的实例，并以此作为Thread的Target来创建Thread对象，该Thread对象才是真正的线程对象；
 - 调用线程对象的start()方法来启动该线程。
 
-采用Runnable接口的方式创建的多个线程可以共享线程类的实例变量（多个线程共享线程的target）
+采用Runnable接口的方式创建的多个线程可以共享线程类的实例变量（多个线程共享线程的target）。
+
+### 使用Callable和Future
+- 创建Callable接口的实现类，并实现Call()方法，该call()方法
 
