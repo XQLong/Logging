@@ -49,11 +49,11 @@
 
 ## 线程的生命周期
 
-
-
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/14/1565785133309-1565785133663.png)
 
+### 新建和就绪状态
 
+当程序使用new关键字创建了一个
 
 
 
