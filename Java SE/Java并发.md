@@ -155,7 +155,8 @@ yield()方法也是Thread类提供的一个静态方法，它可以让当前正�
 
 ### 改变线程的优先级
 
-在默认情况下，main()线程具有普通优先级，由main()线程创建了
+在默认情况下，main()线程具有普通优先级，由main()线程创建的子线程也具有普通优先级。
+Thread类提供了setPriority(int newpriority)、get
 
 
 
