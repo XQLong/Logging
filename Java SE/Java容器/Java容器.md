@@ -36,5 +36,6 @@ Map：
 
 ### 3、Queue
 
-- LinkedList：可以用来实现
+- LinkedList：可以用来实现双向队列；
+- PriorityQueue：基于堆结构实现，可以用它来实现优先队列。
 
