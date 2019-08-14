@@ -24,7 +24,7 @@ Map：
 
 ### 1、Set
 
-- TreeSet:基于红黑树实现
+- TreeSet:基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如HashSet。HashSet的查找
 
 - 
 
