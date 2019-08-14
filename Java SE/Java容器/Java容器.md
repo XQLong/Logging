@@ -49,6 +49,6 @@ Map：
 
 ### 3、HashTable
 - 和HashMap类似，但它是线程安全的，这意味着同一时刻多个线程可以同时写入HashTable并不会导致数据不一致。（它是遗留类，应该尽量避免使用它，可以使用ConcurrentHashMap来支持线程安全）。
-- HashTable中Key和Value都不允许出现null值；在HashMap中
+- HashTable中Key和Value都不允许出现null值。在HashMap中，null可以作为键，且这样的键只有一个；可以有一个
 
 
