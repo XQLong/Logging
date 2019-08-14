@@ -37,6 +37,8 @@
 
 实现Runnable和Callable接口的方式基本相同，知识Callable接口定义的方法有返回值，可以声明抛出异常。可以将实现Runnable接口和实现Callable接口归为一类方式。
 
+实现Runnable、Callable
+
 
 
 
