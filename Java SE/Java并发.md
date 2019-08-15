@@ -262,7 +262,7 @@ CountDownLatch
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856031538-1565856031545.png)
 
-
+维护了一个计数器cnt，每次调用countDown()方法会让计数器的值减1，减到0的时候，那些因为await()
 
 
 
