@@ -260,7 +260,11 @@ CountDownLatch
 
 用来控制一个线程等待多个线程：
 
+<div align="center">
+
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856031538-1565856031545.png)
+
+</div>
 
 维护了一个计数器cnt，每次调用countDown()方法会让计数器的值减1，减到0的时候，那些因为await()方法而等待的线程就会被唤醒。
 
@@ -270,10 +274,9 @@ CountDownLatch
 
 <div align="center">
 
-
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856228022-1565856228027.png)
 
 </div>
-![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856228022-1565856228027.png)
 
 个CountDownLatch相似，也通过计数器实现。不同的是CyclicBarrier的计数器通过reset()方法可以循环使用，所以它叫做循环屏障。
 
