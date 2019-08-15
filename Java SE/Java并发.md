@@ -262,7 +262,15 @@ CountDownLatch
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856031538-1565856031545.png)
 
-维护了一个计数器cnt，每次调用countDown()方法会让计数器的值减1，减到0的时候，那些因为await()
+维护了一个计数器cnt，每次调用countDown()方法会让计数器的值减1，减到0的时候，那些因为await()方法而等待的线程就会被唤醒。
+
+### 9.3 CyclicBarrier
+
+用来控制多个线程相互等待，只有当多个线程都达到时，这些线程才能继续执行。
+
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856228022-1565856228027.png)
+
+个
 
 
 
