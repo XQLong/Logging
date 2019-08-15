@@ -218,9 +218,12 @@ Condition对象被绑在一个Lock对象上，
 
 Condition类提供了await()、signal()、signAll()三个方法。
 
-### 使用阻塞线程（BlockQueue）控制线程通信
+### 使用阻塞线程（BlockingQueue）控制线程通信
 
-虽然BlockingQueue也是Queue的子接口
+虽然BlockingQueue也是Queue的子接口，但它的主要作用并不是作容器，而是作为线程同步的工具。
+
+BlockingQueue的特征：
+
 
 
 
