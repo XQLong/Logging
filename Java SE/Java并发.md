@@ -236,6 +236,10 @@ Java使用ThreadGroup来表示线程组，它可以对一批线程进行分类�
 
 如果线程执行过程中抛出了一个未处理异常，JVM在结束该线程之前会自动查找是否有对应的Thread。UncaughtExceptionHandler对象，如果找到该处理器对象，则会调用该对象的uncaughtException(Thread t,Throwable e)方法来处理该异常。
 
+## 八、线程池
+
+系统启动一个新的线程成本是比较高的，因为
+
 
 
 
