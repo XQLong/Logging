@@ -202,7 +202,7 @@ synchronized修饰的实例方法称为同步方法，无须指定同步监视�
 ### 传统的线程通信
 
 借助Object类提供的wait(）、notify（）和notifyAll（）三个方法。这三个方法必须由同步监视器对象来调用。
-- wait():导致当前线程等待，直到
+- wait():导致当前线程等待，直到其他线程调用同步监视器的notify()方法或notifyAll()方法来唤醒该线程（进入就绪状态）；
 
 ### 使用Condition控制线程通信
 ### 使用阻塞线程（BlockQueue）控制线程通信
