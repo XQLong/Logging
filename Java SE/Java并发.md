@@ -220,6 +220,7 @@ Condition类提供了await()、signal()、signAll()三个方法。
 
 ### 使用阻塞线程（BlockQueue）控制线程通信
 
+虽然BlockingQueue也是Queue的子接口
 
 
 
