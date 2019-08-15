@@ -225,7 +225,8 @@ Condition类提供了await()、signal()、signAll()三个方法。
 BlockingQueue的特征：
 - 当生产者线程试图向BlockingQueue中放入元素时（put()），如果该队列已满，则该线程被阻塞；
 - 当消费者线程试图从BlockingQueue中取出元素时（take())，如果该队列已空，则该线程被阻塞；
-- BlockingQueue超过容量时，put()方法尝试放入元素会造成线程阻塞；如果使用add()方法尝试放入元素会引发异常；如果使用offer()方法尝试放入元素则会返回false，
+- BlockingQueue超过容量时，put()方法尝试放入元素会造成线程阻塞；如果使用add()方法尝试放入元素会引发异常；如果使用offer()方法尝试放入元素则会返回false，元素不会被放入。
+- BlockingQueue为空时，take()方法尝试取出元素时会造成线程阻塞；使用remove()
 
 
 
