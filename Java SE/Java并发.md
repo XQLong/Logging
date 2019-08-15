@@ -216,7 +216,7 @@ Condition对象被绑在一个Lock对象上，
 
  ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565838028559-1565838028847.png)
 
-Condition类提供了await()、
+Condition类提供了await()、signal()、signAll()三个方法。
 
 ### 使用阻塞线程（BlockQueue）控制线程通信
 
