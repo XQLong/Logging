@@ -228,7 +228,9 @@ BlockingQueue的特征：
 - BlockingQueue超过容量时，put()方法尝试放入元素会造成线程阻塞；如果使用add()方法尝试放入元素会引发异常；如果使用offer()方法尝试放入元素则会返回false，元素不会被放入。
 - BlockingQueue为空时，take()方法尝试取出元素时会造成线程阻塞；使用remove()方法会引发异常；使用poll()方法将返回false，元素不会被删除。
 
-###
+## 七、线程组合未处理异常
+
+Java使用ThreadGroup来表示线程组，它可以对一批线程进行分类管理，Java
 
 
 
