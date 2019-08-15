@@ -274,7 +274,7 @@ CountDownLatch
 
 ### 9.4 Semaphore
 
-Semaphore类似于操作
+Semaphore类似于操作系统中的信号量，可以控制对互斥资源的访问线程数。
 
 
 
