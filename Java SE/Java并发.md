@@ -210,7 +210,7 @@ synchronized修饰的实例方法称为同步方法，无须指定同步监视�
 
 如果程序不使用synchronized关键字来保证同步，而是直接使用lock对象来保证同步，则系统中不存在隐式的同步监视器，也就不能使用wait()、notify()、notifyAll()方法进行线程通信了。
 
-当使用lock对象来保证同步时，Java提供了一个Condition类来保持协调，使用Condition可以让那些已得到lock对象却无法继续执行的线程释放lock对象 
+当使用lock对象来保证同步时，Java提供了一个Condition类来保持协调，使用Condition可以让那些已得到lock对象却无法继续执行的线程释放lock对象，Condition对象也可以唤醒其他处于等待状态的线程。 
 
 ### 使用阻塞线程（BlockQueue）控制线程通信
 
