@@ -208,7 +208,7 @@ synchronized修饰的实例方法称为同步方法，无须指定同步监视�
 
 ### 使用Condition控制线程通信
 
-如果程序不使用synchronized
+如果程序不使用synchronized关键字来保证同步，而是直接使用lock对象来保证同步，则系统中不存在隐式的同步监视器，也就不能使用wait()
 
 ### 使用阻塞线程（BlockQueue）控制线程通信
 
