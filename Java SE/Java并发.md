@@ -268,6 +268,11 @@ CountDownLatch
 
 用来控制多个线程相互等待，只有当多个线程都达到时，这些线程才能继续执行。
 
+<div align="center">
+
+
+
+</div>
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856228022-1565856228027.png)
 
 个CountDownLatch相似，也通过计数器实现。不同的是CyclicBarrier的计数器通过reset()方法可以循环使用，所以它叫做循环屏障。
