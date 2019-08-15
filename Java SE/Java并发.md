@@ -258,6 +258,13 @@ java.util.concurrent(J.U.C)大大提高了并发性能，AQS被认为是J.U.C的
 
 CountDownLatch
 
+用来控制一个线程等待多个线程：
+
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/15/1565856031538-1565856031545.png)
+
+
+
+
 
 
 
