@@ -223,7 +223,8 @@ Condition类提供了await()、signal()、signAll()三个方法。
 虽然BlockingQueue也是Queue的子接口，但它的主要作用并不是作容器，而是作为线程同步的工具。
 
 BlockingQueue的特征：
-- 当生产者线程试图向BlockingQueue中放入元素时（普通()），
+- 当生产者线程试图向BlockingQueue中放入元素时（put()），如果该队列已满，则该线程被阻塞；
+- 当消费者线程试图从BlockingQueue中取出元素时（）
 
 
 
