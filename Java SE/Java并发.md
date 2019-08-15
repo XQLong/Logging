@@ -253,7 +253,8 @@ ThreadLocal将需要并发访问的样本复制多份，每个线程拥有一份
 ThreadLocal并不能代替同步机制，两者面向的问题邻域不同。同步机制是为了同步多个线程对相同资源的并发访问，是多个线程之间进行通信的有效方式；而ThreadLocal是为了隔离多个线程的数据共享，从根本上避免多个线程对共享资源（变量）的竞争，也就不需要对多个线程进行同步了。
 
 ### 9.2 concurrent
-java.util.concurrent(J.U.C)大大提高了并发性能，AQS被
+
+java.util.concurrent(J.U.C)大大提高了并发性能，AQS被认为是J.U.C的核心。AQS（Abstract Queue ）
 
 
 
