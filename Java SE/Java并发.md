@@ -200,6 +200,9 @@ synchronized修饰的实例方法称为同步方法，无须指定同步监视�
 ## 五、线程通信
 
 ### 传统的线程通信
+
+借助Object类提供的wait(）、notify（）和notifyAll（）三个
+
 ### 使用Condition控制线程通信
 ### 使用阻塞线程（BlockQueue）控制线程通信
 
