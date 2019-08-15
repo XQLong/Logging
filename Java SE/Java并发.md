@@ -254,7 +254,9 @@ ThreadLocal并不能代替同步机制，两者面向的问题邻域不同。同
 
 ### 9.2 concurrent
 
-java.util.concurrent(J.U.C)大大提高了并发性能，AQS被认为是J.U.C的核心。AQS（Abstract Queue ）
+java.util.concurrent(J.U.C)大大提高了并发性能，AQS被认为是J.U.C的核心。AQS（Abstract Queue Synchronizer），即队列同步器。它是构建锁或其他同步组件的基础框架。
+
+CountDownLatch
 
 
 
