@@ -234,7 +234,7 @@ Java使用ThreadGroup来表示线程组，它可以对一批线程进行分类�
 
 在默认情况下，子线程和创建它的父线程处于同一个线程组内。一旦某个线程加入了指定的线程组后，该线程将一直处于该线程组内，指导该线程死亡，线程运行中途不能改变它所属的线程组。
 
-如果线程执行过程中抛出了一个未处理异常，JVM在结束该线程之前会自动查找是否有对应的Thread。UncaughtExceptionHandler对象，如果找到该处理器对象，则会
+如果线程执行过程中抛出了一个未处理异常，JVM在结束该线程之前会自动查找是否有对应的Thread。UncaughtExceptionHandler对象，如果找到该处理器对象，则会调用该对象的uncaughtException(Thread t,Throwable e)方法来处理该异常。
 
 
 
