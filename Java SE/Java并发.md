@@ -201,7 +201,7 @@ synchronized修饰的实例方法称为同步方法，无须指定同步监视�
 
 ### 传统的线程通信
 ### 使用Condition控制线程通信
-### 使用阻塞线程（BlockQueue）控制线程
+### 使用阻塞线程（BlockQueue）控制线程通信
 
 
 
