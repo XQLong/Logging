@@ -244,8 +244,9 @@ Java使用ThreadGroup来表示线程组，它可以对一批线程进行分类�
 
 ## 九、线程相关类
 
-ThreadLocal类
+### 9.1 ThreadLocal类
 
+通过把数据放在ThreadLocal类中，就可以让每个线程创建一个
 
 
 
