@@ -17,4 +17,8 @@ UDP：不可靠，无连接，时延小，适用于小文件。
 - UDP使用最大努力交付，即不保证可靠交付；
 - UDP是面向报文的，适合一次性传输少量数据的网络应用。
 
+UDP首部格式：
+
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566005566102-1566005566471.png)
+
 
