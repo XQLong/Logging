@@ -36,18 +36,17 @@ Spring是一个开源框架，为例解决企业应用开发的复杂性而创�
 
 Spring注入是指在启动Spring容器加载Beans的时候，完成对变量的赋值行为。常用的注入方式有两种：
 
-- 设值注入
-
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566027508169-1566027508177.png)
 
-- 构造注入
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566027527480-1566027527485.png)
 
 - 自动装配（Autowiring）
 
 
-###
+### AOP
+
+
 
 
 
