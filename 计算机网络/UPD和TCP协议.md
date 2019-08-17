@@ -21,7 +21,9 @@ UDP首部格式：
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566005566102-1566005566471.png)
 
-UDP校验（）：
+UDP校验（UDP检验和）：
+
+
 
 
 
