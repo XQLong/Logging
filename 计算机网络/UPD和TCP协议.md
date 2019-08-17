@@ -88,7 +88,7 @@ TCP连接的建立采用客户服务器方式，主动发起连接建立的应�
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566009084893-1566009084897.png)
 
-- 客户端发送连接释放报文段，停止发送数据，主动
+- 客户端发送连接释放报文段，停止发送数据，主动关闭TCP连接。FIN=1.seq=u
 
 
 
