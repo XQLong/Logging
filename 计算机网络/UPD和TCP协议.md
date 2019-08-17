@@ -78,7 +78,8 @@ TCP连接的建立采用客户服务器方式，主动发起连接建立的应�
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566008354200-1566008354203.png)
 
-- 客户端发送连接请求报文段，无应用层数据。SYN
+- 客户端发送连接请求报文段，无应用层数据。SYN=1,seq=x(随机)
+- 
 
 
 
