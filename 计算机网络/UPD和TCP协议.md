@@ -46,7 +46,7 @@ UDP：不可靠，无连接，时延小，适用于小文件。
 
 ## 三、TCP协议
 
-TCP协议的特点：
+### TCP协议的特点：
 - TCP是面向连接（虚连接）的传输协议。
 - 每一条TCP连接只能有两个端点，每一条TCP连接只能是点对点
 - 可靠有序，不丢不重
@@ -55,7 +55,11 @@ TCP协议的特点：
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566006703252-1566006703258.png)
 
+### TCP报文段首部格式
 
+
+
+1
 
 
 
