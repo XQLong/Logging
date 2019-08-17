@@ -1,4 +1,4 @@
-## 传输层
+## 一、传输层
 
 传输层是主机才会有的层次。传输层为应用层提供服务，同时是可以使用网络层的服务。传输层的功能：
 
@@ -10,25 +10,28 @@
 TCP：可靠，面向连接，时延大，适用于大文件；
 UDP：不可靠，无连接，时延小，适用于小文件。
 
-## UDP协议
+## 二、UDP协议
 
-主要特点：
+### 主要特点：
 - UDP是无连接的，减少开销和发送数据之前的时延；
 - UDP使用最大努力交付，即不保证可靠交付；
 - UDP是面向报文的，适合一次性传输少量数据的网络应用。
 
-UDP首部格式：
+### UDP首部格式：
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566005566102-1566005566471.png)
 
-UDP校验（UDP检验和）：
+### UDP校验（UDP检验和）：
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566005700577-1566005700581.png)
 
 伪首部只会在计算检验和时才出现，不向下也不向上传递。
 
-检验过程，在发送端：
+### 检验过程
 
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566006081759-1566006081763.png)
+
+在发送端：
 - 填充上伪首部
 - 全零填充检验和字段
 - 全零填充数据部分（UDP数据报要看成雨多4B的字串连接起来）
