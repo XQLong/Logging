@@ -1,6 +1,6 @@
 ## Spring概述
 
-### Spring是什么
+### 一、Spring是什么
 
 Spring是一个开源框架，为例解决企业应用开发的复杂性而创建的。
 
@@ -11,16 +11,20 @@ Spring是一个开源框架，为例解决企业应用开发的复杂性而创�
 - 包含并管理应用对象的配置和生命周期
 - 将简单的组件配置、组合成为复杂的应用，这个意义上是一个框架
 
-### Spring架构
+### 二、Spring架构
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566025647980-1566025648383.png)
 
-### Spring作用
+### 三、Spring作用
 
 - 容器
 - 提供了多种技术的支持：JMS、MQ支持、UnitTest...
 - AOP(事物管理、日志等)
 - 提供了众多方便应用的辅助类（JDBC Template等）
 - 对主流应用框架（Hibernate等）提供了良好的支持
+
+### 四、IOC
+
+#### 
 
 
