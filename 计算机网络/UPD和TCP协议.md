@@ -23,8 +23,9 @@ UDP首部格式：
 
 UDP校验（UDP检验和）：
 
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566005700577-1566005700581.png)
 
-
+伪首部只会在计算检验和时才出现，不向下也不向上传递。
 
 
 
