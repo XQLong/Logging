@@ -46,7 +46,7 @@ Spring注入是指在启动Spring容器加载Beans的时候，完成对变量的
 
 ### AOP
 
-
+AOP：Aspect Oriented Programming的缩写，意为：面向切面编程
 
 
 
