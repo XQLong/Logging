@@ -50,7 +50,11 @@ AOP：Aspect Oriented Programming的缩写，意为：面向切面编程，通�
 
 实现方式：
 - 预编译，Aspect
-- 运行期动态代理（JDK动态代理、CGLib动态代理）SPringAOP，
+- 运行期动态代理（JDK动态代理、CGLib动态代理）SPringAOP，JBossAOP
+
+
+
+
 
 
 
