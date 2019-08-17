@@ -59,7 +59,8 @@ UDP：不可靠，无连接，时延小，适用于小文件。
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566006780803-1566006780806.png)
 
-- 序号：在一个
+- 序号：报文段所发送数据的第一个字节的序号
+- 确认号：期望收到对方先一个
 
 
 
