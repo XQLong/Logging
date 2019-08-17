@@ -34,7 +34,9 @@ Spring是一个开源框架，为例解决企业应用开发的复杂性而创�
 
 #### Spring注入
 
-Spring注入是指在启动Spring容器加载Beans
+Spring注入是指在启动Spring容器加载Beans的时候，完成对变量的赋值行为。常用的注入方式有两种：
+
+- 
 
 
 
