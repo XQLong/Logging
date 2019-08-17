@@ -53,6 +53,9 @@ TCP协议的特点：
 - TCP提供全双工通信
 - TCP面向字节流
 
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/17/1566006703252-1566006703258.png)
+
+
 
 
 
