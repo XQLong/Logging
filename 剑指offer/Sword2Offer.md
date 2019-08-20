@@ -2500,8 +2500,17 @@ public class Solution {
 
 - 正则表达式匹配
 
-```language
-
+```
+public class Solution {
+    public boolean isNumeric(char[] str) {
+        //Java字符串里面的'\'需要使用'\'进行一次转义
+        String pat = "[+-]?\\d*(\\.\\d+)?([Ee][+-]?\\d+)?";
+        if (str==null||str.length==0){
+            return false;
+        }
+        return new String(str).matches(pat);
+    }
+}
 ```
 
 
