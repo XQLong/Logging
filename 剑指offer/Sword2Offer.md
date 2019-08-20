@@ -2565,10 +2565,39 @@ fast经过的节点数是slow的两倍：a+c=(k2-2*k1)*b，即a+c=k3*b
 ````
 由上式可知slow再移动环外节点数个节点就能遍历一边环内所有节点，到达入口节点。
 
-
+![entrynodeofloop](https://github.com/XQLong/java_workplace/blob/master/img/entrynodeofloop.png)
 
 - step2:保留slow指针在上一步中的位置，使用另一指针由链表起始点开始同时与
 slow指针以每次一个节点的速度移动，则它们将相遇在链表中环的起始点。
 
 ### 代码示例
 
+```
+public class Solution {
+    public ListNode EntryNodeOfLoop(ListNode pHead)
+    {
+        if(pHead==null||pHead.next==null) return null;
+        ListNode cur1 = pHead;
+        ListNode cur2 = pHead.next;
+        while(cur1!=cur2){
+            cur1 = cur1.next;
+            cur2 = cur2.next;
+            if(cur2==null) return null;
+            cur2 = cur2.next;
+        }
+        cur1 = cur1.next;
+        cur2 = pHead;
+        while(cur2!=cur1){
+            cur1 = cur1.next;
+            cur2 = cur2.next;
+        }
+        return cur1;
+    }
+}
+```
+
+## 8、跳台阶
+
+### 解答思路
+
+### 代码示例
