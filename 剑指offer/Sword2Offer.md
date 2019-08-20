@@ -2513,16 +2513,41 @@ public class Solution {
 }
 ```
 
+## 54、跳台阶
+
+请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符"go"时，第一个只出现一次的字符是"g"。当从该字符流中读出前六个字符“google"时，第一个只出现一次的字符是"l"。
+
+### 解答思路
+
 - 使用一个长度为256的数组来对字符出现的次数进行统计，
 - 使用队列来保存数据，以保证处理数据流的先后顺序。
   
 当队列顶端的元素不是第一次出现时进行`poll`操作，保证队列顶端的元素为第一次出现，若队列为空返回`#`。
 
-## 54、跳台阶
-
-
-
-### 解答思路
-
 ### 代码示例
+
+```
+import java.util.*;
+public class Solution {
+    //Insert one char from stringstream
+    int[] cnt = new int[128];
+    Queue<Character> queue = new LinkedList<Character>(); 
+    public void Insert(char ch)
+    {
+        cnt[ch]++;
+        queue.offer(ch);
+        while(!queue.isEmpty()&&cnt[queue.peek()]>1){
+            queue.poll();
+        }
+    }
+  //return the first appearence once char in current stringstream
+    public char FirstAppearingOnce()
+    {
+        return queue.isEmpty()?'#':queue.peek();
+    }
+}
+```
+
+## 
+
 
