@@ -2457,7 +2457,45 @@ public class Solution {
 - 直接字符匹配
 
 ```
-
+public class Solution {
+    public boolean isNumeric(char[] str) {
+        int eind = getEIndex(str);
+        int len = str.length-1;
+        if(eind==-1) return isFloat(str,0,len)||isInt(str,0,len);
+        else if(eind==len) return false;
+        else return (isFloat(str,0,eind-1)||isInt(str,0,eind-1))&&isInt(str,eind+1,len);
+    }
+    public int getEIndex(char[] str){
+        for(int i=0;i<str.length;i++){
+            if(str[i]=='e'||str[i]=='E') return i;
+        } 
+        return -1;
+    }
+    public boolean isInt(char[] str, int ind1,int ind2){
+        if(ind1<0||ind2>=str.length) return false;
+        int flag = 1;
+        int ind = ind1;
+        if(str[ind1]=='-'){
+            flag = -1;
+            ind++;
+        } else if(str[ind1]=='+'){
+            ind++;
+        }
+        for(int i=ind;i<=ind2;i++){
+            if(str[i]-'0'<0||str[i]-'0'>9) return false;
+        }
+        return true;
+    }
+    public boolean isFloat(char[] str, int ind1,int ind2){
+        if(ind1<0||ind2>=str.length) return false;
+        for(int i=ind1;i<=ind2;i++){
+            if(str[i]=='.'&&i<ind2&&str[i+1]!='+'&&str[i+1]!='-'){
+                return isInt(str,ind1,i-1)&&isInt(str,i+1,ind2);
+            }
+        }
+        return false;
+    }
+}
 ```
 
 
