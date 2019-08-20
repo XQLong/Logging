@@ -2396,6 +2396,12 @@ public class Solution {
 
 ### 解答思路
 
+本题主要利用递归思想来对匹配字符串和模式字符串进行遍历比较，其主要递归流程如图所示，
+
+![regular_expression](https://github.com/XQLong/java_workplace/blob/master/img/regular_expression.png)
+
+除了主要递归流程外还要额外注意考虑匹配字符和模板字符为空，以及边界条件等问题。
+
 ### 代码示例
 
 ```
