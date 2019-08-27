@@ -1,5 +1,6 @@
-## 1、使用synchronized引入同步监视器。
+## 1、同步代码块
 
+使用synchronized引入同步监视器：
 ```
 synchronized(obj){
 ...
