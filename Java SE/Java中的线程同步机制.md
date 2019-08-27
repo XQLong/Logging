@@ -18,4 +18,5 @@ synchronized(obj){
 
 通过显示定义同步锁对象来实现同步，如最常用的可重入锁（ReentranLock）。
 
-## 二、Synchronized
+## 二、Synchronized底层同步原理
+
