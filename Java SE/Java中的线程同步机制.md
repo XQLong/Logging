@@ -32,6 +32,10 @@ volatile关键字可以说是Java虚拟机提供的最轻量级的同步机制�
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/27/1566908560553-1566908560818.png)
 
+不同架构的物理机器可以拥有不一样的内存模型，而Java虚拟机也有自己的内存模型，并且这里介绍的内存访问操作与硬件的缓存访问操作具有很高的可比性。
+
+### 2、指令重排
+
 
 
 ### CAS指令
