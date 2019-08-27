@@ -123,7 +123,7 @@ public class VolatileTest {
 使用synchronized修饰后，increase方法变成了一个原子操作，因此是肯定能得到正确的结果。但是，每次自增都进行加锁，性能可能会稍微差了点。
 
 - 使用Java并发包原子操作类
-将race改为使用
+将race改为使用使用AtomicInteger定义，“race++”改成使用“race.getAndIncrement()”，AtomicInteger.getAndIncrement()是原子操作，因此我们可以确保每次都可以获得正确的结果，并且在性能上有不错的提升。
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/27/1566914881126-1566914881133.png)
 
