@@ -77,7 +77,7 @@ Java内存模型对volatile专门定义了一些特殊的访问规则，当一�
 
 ### volatile的使用场景
 
-
+- 状态标记
 
 ## 三、Synchronized底层同步原理
 
