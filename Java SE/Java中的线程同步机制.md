@@ -18,7 +18,9 @@ synchronized(obj){
 
 通过显示定义同步锁对象来实现同步，如最常用的可重入锁（ReentranLock）。
 
-## 二、Synchronized底层同步原理
+## 二、Volatile关键字
+
+## 三、Synchronized底层同步原理
 
 ### CAS指令
 
