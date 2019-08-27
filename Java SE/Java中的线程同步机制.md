@@ -134,3 +134,4 @@ public class VolatileTest {
 最后调用的是compareAndSwapInt方法，即CAS。
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/27/1566915241171-1566915241175.png)
+
