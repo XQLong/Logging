@@ -22,5 +22,5 @@ synchronized(obj){
 
 ### CAS指令
 
-CAS（Compare-and-Swap），即比较并交换，是一种实现并发算法时常用到的技术，
+CAS（Compare-and-Swap），即比较并交换，是一种实现并发算法时常用到的技术，Java并发包中很多类都使用到了CAS技术
 
