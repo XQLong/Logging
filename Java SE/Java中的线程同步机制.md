@@ -1,3 +1,5 @@
+## 一、同步方法
+
 ### 1、同步代码块
 
 使用synchronized引入同步监视器：
@@ -16,3 +18,4 @@ synchronized(obj){
 
 通过显示定义同步锁对象来实现同步，如最常用的可重入锁（ReentranLock）。
 
+## 二、Synchronized
