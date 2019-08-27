@@ -127,8 +127,8 @@ public class VolatileTest {
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/27/1566914881126-1566914881133.png)
 
+通过阅读方法源码我们可以看到，getAndIncrement方法调用getAndAddInt方法，
 
 
-
-
+最后调用的是compareAndSwapInt方法，
 
