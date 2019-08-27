@@ -48,6 +48,8 @@ Java内存模型规定了所有的变量都存储在主内存（Main Memory）�
 
 ### 4、ACID
 
+- 原子性（Atomicity）：一个操作或者多个
+
 ## 三、Synchronized底层同步原理
 
 ### CAS指令
