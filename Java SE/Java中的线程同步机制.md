@@ -85,7 +85,7 @@ Java内存模型对volatile专门定义了一些特殊的访问规则，当一�
 
 ## 三、Synchronized底层同步原理
 
-### CAS指令
+### 1、CAS指令
 
 CAS（Compare-and-Swap），即比较并交换，是一种实现并发算法时常用到的技术，Java并发包中很多类都使用到了CAS技术。
 
