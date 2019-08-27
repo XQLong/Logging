@@ -1,1 +1,1 @@
-## 1、使用
+## 1、使用synchronized
