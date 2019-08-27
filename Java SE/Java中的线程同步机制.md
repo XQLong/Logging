@@ -69,7 +69,7 @@ Java内存模型对volatile专门定义了一些特殊的访问规则，当一�
 
 需要注意的是，volatile变量在各个线程的工作内存中不存在一致性问题，但是Java里面的运算并非原子操作，并且volatile并不能保证原子性，导致volatile变量的运算在并发下一样是不安全的。
 
-### 7、
+### 7、volatile的使用限制
 
 
 ## 三、Synchronized底层同步原理
