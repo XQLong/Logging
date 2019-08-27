@@ -119,10 +119,10 @@ public class VolatileTest {
 
 根据以上volatile关键字的学习我们知道，以上代码并不能按照我们所期望的输出结果200000，这是因为volatile关键字只能保证可见性，无法保证原子性，而自增操作并不是一个原子操作，在并发的情况下指令可能把较小的race值同步回内存中，导致我们每次都无法获得想要的结果。可以考虑以下解决方法：
 
-- 使用synchronized来修饰increase方法。
+- 使用synchronized来修饰increase方法
 使用synchronized修饰后，increase方法变成了一个原子操作，因此是肯定能得到正确的结果。但是，每次自增都进行加锁，性能可能会稍微差了点。
 
-- 
+- 使用Java并发包原子操作类
 
 
 
