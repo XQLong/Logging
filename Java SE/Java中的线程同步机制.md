@@ -30,6 +30,9 @@ volatile关键字可以说是Java虚拟机提供的最轻量级的同步机制�
 
 基于高速缓存的存储交互很好地解决了处理器与内存的速度矛盾，但是也为计算机系统带来更高的复杂度，因为它引入了一个新的问题：缓存一致性（Cache Coherence）。在多处理器系统中，每个处理器都有自己的高速缓存，而它们又共享同一主内存（Main Memory），当多个处理器的运算任务都涉及同一块主内存区域时，将可能导致各自的缓存数据不一致。
 
+![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/27/1566908560553-1566908560818.png)
+
+
 
 ### CAS指令
 
