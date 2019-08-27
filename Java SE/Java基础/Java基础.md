@@ -14,7 +14,7 @@ Java最重要的特性之一就是它的内存分配系统。
 |double|8|
 |long|8|
 
-
+整型：byte、short、int、long
 
 **对象所占用的内存：**
 
