@@ -123,6 +123,8 @@ public class VolatileTest {
 使用synchronized修饰后，increase方法变成了一个原子操作，因此是肯定能得到正确的结果。但是，每次自增都进行加锁，性能可能会稍微差了点。
 
 - 使用Java并发包原子操作类
+将race改为
+
 
 
 
