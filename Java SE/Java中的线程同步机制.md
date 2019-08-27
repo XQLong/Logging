@@ -9,3 +9,5 @@ synchronized(obj){
 ```
 
 ## 2、同步方法
+
+使用synchronized关键字来修饰某个方法，则
