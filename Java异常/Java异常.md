@@ -1,1 +1,2 @@
-Java将异常分为两种，Checked异常和Runtime异常，Java认为Checked异常都是可以在编译阶段被处理的异常，
+Java将异常分为两种，Checked异常和Runtime异常，Java认为Checked异常都是可以在编译阶段被处理的异常，所以它强制程序处理所有的Checked异常，而Runtime异常则无需处理。
+
