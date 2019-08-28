@@ -1,1 +1,1 @@
-Java将异常分为两种，Checked异常和Runtime异常，Java
+Java将异常分为两种，Checked异常和Runtime异常，Java认为Checked异常都是可以在编译阶段被处理的异常，
