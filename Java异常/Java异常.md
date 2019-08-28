@@ -1,0 +1,1 @@
+Java将异常分为两种，Checked异常和Runtime异常，Java
