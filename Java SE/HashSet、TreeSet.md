@@ -8,5 +8,5 @@
 
 TreeSet集合实现了SortedSet接口, 可以对集合中元素进行自然排序, 要求集合中的元素必须是可比较的。
 
-TreeSet集合底层是TreeMap
+TreeSet集合底层是TreeMap，向TreeSet集合添加元素,实际上是把该元素作为键添加到了底层TreeMap中，TreeSet集合实际上就是底层TreeMap的键的集合。
 
