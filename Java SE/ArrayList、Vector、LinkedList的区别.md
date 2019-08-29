@@ -5,4 +5,7 @@
 3. ArrayList扩容: 1.5倍,   Vector扩容:2倍
 4. Vector提供的方法都 使用了synchronized修饰 ,是线程安全的；而ArrayList是线程不安全的。
 
-- 
+- LinkedList
+
+LinkedList底层是双向链表
+
