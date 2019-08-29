@@ -7,5 +7,5 @@
 
 - LinkedList
 
-LinkedList底层是双向链表
+LinkedList底层是双向链表。
 
