@@ -7,7 +7,7 @@
 
 - LinkedList
 
-LinkedList底层是双向链表。
+LinkedList底层是双向链表。LinkedList也是线程不安全的。
 
 主要增加了针对头结点与尾结点进行操作的方法, 即针对第一个元素和最后一个元素进行操作的方法：
 
