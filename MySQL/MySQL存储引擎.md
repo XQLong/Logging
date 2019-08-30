@@ -6,4 +6,9 @@ MySQL中的数据用各种不同的技术存储在文件（或者内存）中。
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/08/30/1567137511408-1567137511681.png)
 
-- MyISAM存储引擎 
+### MyISAM存储引擎 
+
+-  MyISAM存储引擎是MySQL最常用的引擎。
+
+- 它管理的表具有以下特征：
+1. 使用三个文件表示每个表：格式文件（）
