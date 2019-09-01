@@ -2600,6 +2600,29 @@ public class Solution {
 
 ### 解答思路
 
-
+分为头结点和下一节点是否相等两种情况，若相等以下一节点为头结点进行递归；若不相等，则将头节点
+指向`deleteDuplication(next)`，即其子问题返回的头结点。
 
 ### 代码示例
+
+```
+public class Solution {
+    public ListNode deleteDuplication(ListNode pHead)
+    {
+        if(pHead==null||pHead.next==null) return pHead;
+        ListNode next = pHead.next;
+        if(pHead.val==next.val){
+            while(next!=null&&pHead.val==next.val){
+                pHead = next;
+                next = pHead.next;
+            }
+             return deleteDuplication(next);
+        }else{
+            pHead.next = deleteDuplication(next);
+        }
+        return pHead;
+    }
+}
+```
+
+
