@@ -41,7 +41,9 @@
 一个载入JVM的类使用其全限定类名（包括包名和类名）和其类加载器作为唯一标识，保证同一个类不会载入JVM内存多次。这意味着两个不同的类加载器的同名类时是不同的，互不兼容的。
 
 JVM启动时，会形成由三个类加载器组成的初始类加载器层次结构：
-- Bootstrap Class
+- Bootstrap ClassLoader：根类加载器
+- Extension ClassLoader：扩展类加载器
+- System ClassLoader：系统类加载器
 
 
 
