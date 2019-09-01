@@ -59,7 +59,7 @@ JVM的类加载机制主要有如下三种：
 
 获取Class对象方法：
 
-- 
+- 使用Class类的forName(String clazzName)静态方法
 
 
 
