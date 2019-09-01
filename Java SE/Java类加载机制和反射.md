@@ -59,7 +59,8 @@ JVM的类加载机制主要有如下三种：
 
 获取Class对象方法：
 
-- 使用Class类的forName(String clazzName)静态方法
+- 使用Class类的forName(String clazzName)静态方法；
+- 调用某个类的class属性来获取该类对应的Class对象。
 
 
 
