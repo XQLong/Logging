@@ -2631,6 +2631,33 @@ public class Solution {
 
 ### 解答思路
 
+分为该节点的右子树是否为空两种情况来考虑。若为不为空，则找出右子树的最左节点；
+若为空，则找出第一个左子树包含该节点的祖先节点。具体如图例所示：
+
+![binary_tree_next_node](https://github.com/XQLong/java_workplace/blob/master/img/binary_tree_next_node.png)
+
 ### 代码示例
+
+```
+public class Solution {
+    public TreeLinkNode GetNext(TreeLinkNode pNode)
+    {
+        if(pNode.right==null){
+            TreeLinkNode next = pNode.next;
+            while(next!=null&&(next.left!=pNode)){
+                pNode = next;
+                next = next.next;
+            }
+            return next;
+        }else{
+            TreeLinkNode right = pNode.right;
+            while(right.left!=null){
+                right = right.left;
+            }
+            return right;
+        }
+    }
+}
+```
 
 
