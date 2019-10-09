@@ -2670,10 +2670,29 @@ public class Solution {
 
 ### 代码示例
 
-<div align="center">
+```
 
 
+import java.util.Stack;
 
-</div>
+public class Solution {
+    public boolean IsPopOrder(int [] pushA,int [] popA) {
+        Stack<Integer> stack = new Stack<Integer>();
+        int len = popA.length;
+        int ind=0;
+        for(int i=0;i<len;i++){
+            stack.push(pushA[i]);
+            while(!stack.isEmpty()&&stack.peek()==popA[ind]){
+                stack.pop();
+                ind++;
+            }
+        }
+        return ind==len&&stack.isEmpty();
+    }
+}
+
+```
+
+
 
 
