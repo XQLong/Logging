@@ -2666,7 +2666,9 @@ public class Solution {
 
 ### 解答思路
 
-使用一个栈来模拟入栈和出栈数组，若入栈完所有元素后栈为空则，该出栈顺序正确。
+对二叉树进行递归比较其左节点和右节点是否相等。
+
+![TreeSymmetrical](https://github.com/XQLong/java_workplace/blob/master/img/TreeSymmetric.png)
 
 ### 代码示例
 
