@@ -2696,9 +2696,38 @@ public class Solution {
 
 ### 解答思路
 
-使用队列对二叉树进行层次遍历，使用标志flag来标记当前所遍历到的层数的奇偶，使用Collections
+使用队列对二叉树进行层次遍历，使用标志flag来标记当前所遍历到的层数的奇偶，使用Collections类的reverse函数来对ArrayList里元素的顺序进行反转。
 
 ### 代码示例
+
+```
+public class Solution {
+    public ArrayList<ArrayList<Integer> > Print(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer> > res = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<TreeNode>(); 
+        TreeNode cur = pRoot;
+        boolean flag = true;
+        if(cur==null) return res;
+        queue.offer(cur);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            ArrayList<Integer> temp = new ArrayList<>(); 
+            int i = 0;
+            while(i<size){
+                cur = queue.poll();
+                temp.add(cur.val);
+                if(cur.left!=null) queue.offer(cur.left);
+                if(cur.right!=null) queue.offer(cur.right);
+                i++;
+            }
+            if(!flag) Collections.reverse(temp);
+            res.add(temp);
+            flag = !flag;
+        }
+        return res;
+    }
+}
+```
 
 
 
