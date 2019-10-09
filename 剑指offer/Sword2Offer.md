@@ -2672,7 +2672,6 @@ public class Solution {
 
 ```
 
-
 import java.util.Stack;
 
 public class Solution {
