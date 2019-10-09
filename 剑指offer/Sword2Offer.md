@@ -2744,6 +2744,38 @@ public class Solution {
 
 ### 代码示例
 
+```
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Solution {
+    public ArrayList<ArrayList<Integer> > Print(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer> > res = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<TreeNode>(); 
+        TreeNode cur = pRoot;
+        if(cur==null) return res;
+        queue.offer(cur);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            ArrayList<Integer> temp = new ArrayList<>(); 
+            int i = 0;
+            while(i<size){
+                cur = queue.poll();
+                temp.add(cur.val);
+                if(cur.left!=null) queue.offer(cur.left);
+                if(cur.right!=null) queue.offer(cur.right);
+                i++;
+            }
+            res.add(temp);
+        }
+        return res;
+    }
+}
+```
+
+
+
 
 
 
