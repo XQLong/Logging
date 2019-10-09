@@ -2701,6 +2701,11 @@ public class Solution {
 ### 代码示例
 
 ```
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Collections;
+
 public class Solution {
     public ArrayList<ArrayList<Integer> > Print(TreeNode pRoot) {
         ArrayList<ArrayList<Integer> > res = new ArrayList<>();
