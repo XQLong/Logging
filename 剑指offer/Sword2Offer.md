@@ -2674,21 +2674,17 @@ public class Solution {
 
 ```
 
-import java.util.Stack;
-
 public class Solution {
-    public boolean IsPopOrder(int [] pushA,int [] popA) {
-        Stack<Integer> stack = new Stack<Integer>();
-        int len = popA.length;
-        int ind=0;
-        for(int i=0;i<len;i++){
-            stack.push(pushA[i]);
-            while(!stack.isEmpty()&&stack.peek()==popA[ind]){
-                stack.pop();
-                ind++;
-            }
-        }
-        return ind==len&&stack.isEmpty();
+    boolean isSymmetrical(TreeNode pRoot)
+    {
+        if(pRoot==null) return true;
+        return isMirror(pRoot.left,pRoot.right);
+    }
+    boolean isMirror(TreeNode left,TreeNode right){
+        if(left==null&&right==null) return true;
+        if(left==null||right==null) return false;
+        if(left.val!=right.val) return false;
+        return isMirror(left.left,right.right)&&isMirror(left.right,right.left);
     }
 }
 
