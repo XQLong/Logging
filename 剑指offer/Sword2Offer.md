@@ -2696,7 +2696,7 @@ public class Solution {
 
 ### 解答思路
 
-使用
+使用队列对二叉树进行层次遍历，使用标志flag来标记当前所遍历到的层数的奇偶，使用Collections
 
 ### 代码示例
 
