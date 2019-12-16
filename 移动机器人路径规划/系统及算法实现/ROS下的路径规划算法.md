@@ -20,7 +20,9 @@ TF是一个让用户随时间跟踪多个坐标系的功能包，它使用树型
 导航功能需使用来自传感器的信息避开现实环境中的障碍物，它假定这些传感器在ROS上不断发布sensor_msgs/LaserScan消息或者sensor_msgs/PointCloud消息。
 
 - 里程信息(odometry source)
-里程计包含两个方面的信息：位姿（位置和转角）和速度（前进速度和转向速度）。
+里程计包含两个方面的信息：位姿（位置和转角）和速度（前进速度和转向速度）。导航功能需要使用tf和nav_msgs/Odometry消息发布的里程信息。
+
+- 基座控制器(base controller)
 
 
 ## navigation功能包
