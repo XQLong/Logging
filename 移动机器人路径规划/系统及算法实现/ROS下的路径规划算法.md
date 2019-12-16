@@ -16,9 +16,10 @@
 - tf功能包
 TF是一个让用户随时间跟踪多个坐标系的功能包，它使用树型数据结构，根据时间缓冲并维护多个坐标系之间的坐标变换关系，可以帮助开发者在任意时间，在坐标系间完成点、向量等坐标的变换。
 
-- 传感器信息
+- 传感器信息(sensor source)
 导航功能需使用来自传感器的信息避开现实环境中的障碍物，它假定这些传感器在ROS上不断发布sensor_msgs/LaserScan消息或者sensor_msgs/PointCloud消息。
 
+- 里程信息(odometry source)
 
 ## navigation功能包
 
