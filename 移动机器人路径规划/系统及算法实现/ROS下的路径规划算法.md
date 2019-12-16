@@ -6,3 +6,6 @@
 
 [nav_core](http://wiki.ros.org/nav_core)
 
+[classnav__core](http://docs.ros.org/hydro/api/nav_core/html/classnav__core_1_1BaseGlobalPlanner.html)
+
+## 相关
