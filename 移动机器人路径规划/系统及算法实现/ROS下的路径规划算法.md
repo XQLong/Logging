@@ -23,7 +23,7 @@ TF是一个让用户随时间跟踪多个坐标系的功能包，它使用树型
 里程计包含两个方面的信息：位姿（位置和转角）和速度（前进速度和转向速度）。导航功能需要使用tf和nav_msgs/Odometry消息发布的里程信息。
 
 - 基座控制器(base controller)
-导航功能包假定它可以通过话题"cmd_vel"发布geometry_msgs/Twist类型的消息，这个消息基于机器人的基座坐标系，它传递的是运动命令。这意味着必须有一个节点订阅"cmd_vel"话题， 将该话题上的速度命令(vx, vy, vtheta转换为电机命令(cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z)发送给移动基座
+导航功能包假定它可以通过话题"cmd_vel"发布geometry_msgs/Twist类型的消息，这个消息基于机器人的基座坐标系，它传递的是运动命令。这意味着必须有一个节点订阅"cmd_vel"话题， 将该话题上的速度命令(vx, vy, vtheta转换为电机命令(cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z)发送给移动
 
 
 
