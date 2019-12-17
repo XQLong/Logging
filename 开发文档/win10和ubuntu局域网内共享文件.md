@@ -31,4 +31,4 @@ sudo apt-get install samba samba-common
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/12/16/1576502595872-1576502595880.png)
 
 
-
+## win10yin
