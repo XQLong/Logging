@@ -30,7 +30,16 @@ sudo apt-get install samba samba-common
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/12/16/1576502595872-1576502595880.png)
 
-- 给创建的
+- 给创建的目录设置权限
+
+```
+sudo chmod 777 /home/imhqq/share
+```
+- 添加用户
+```sudo smbpasswd -a imhqq
+
+```
+
 
 ## win10映射网络驱动器
 
