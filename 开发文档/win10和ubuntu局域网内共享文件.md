@@ -25,13 +25,12 @@ sudo apt-get dist-upgrade
 sudo apt-get install samba samba-common
 ```
 
-
-
 - 用户home目录下创建共享文件夹
 创建file_share目录，右键属性对其进行共享并勾选其相应的权限。
 
 ![title](https://raw.githubusercontent.com/XQLong/Image-Hosting/master/gitnote/2019/12/16/1576502595872-1576502595880.png)
 
+- 给创建的
 
 ## win10映射网络驱动器
 
