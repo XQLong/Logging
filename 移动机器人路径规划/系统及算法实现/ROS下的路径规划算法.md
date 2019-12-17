@@ -47,3 +47,6 @@ catkin_create_pkg my_robot_name_2dnav move_base my_tf_configuration_dep my_odom_
 
 #### 配置代价地图（local_costmap & global_costmap）
 
+使用两个地图存储
+
+
