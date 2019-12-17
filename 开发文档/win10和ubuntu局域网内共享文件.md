@@ -37,7 +37,7 @@ sudo chmod 777 /home/imhqq/share
 ```
 - 添加用户，设置密码
 ```
-sudo smbpasswd -a username
+sudo smbpasswd -a name
 ```
 - 配置samba的配置文件smb.conf，在最后添加
 ```
@@ -47,16 +47,13 @@ sudo smbpasswd -a username
    path = /home/username/share
    create mask = 0700
    directory mask = 0700
-   valid users = imhqq
-   force user = imhqq
-   force group = imhqq
+   valid users = name
+   force user = name
+   force group = name
    public = yes
    available = yes
    writable = yes
 ```
-
-
-
 
 ## win10映射网络驱动器
 
