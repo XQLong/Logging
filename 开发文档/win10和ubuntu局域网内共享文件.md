@@ -37,9 +37,24 @@ sudo chmod 777 /home/imhqq/share
 ```
 - 添加用户，设置密码
 ```
-sudo smbpasswd -a imhqq
+sudo smbpasswd -a username
 ```
-- 配置samba的配置文件
+- 配置samba的配置文件smb.conf，在最后添加
+```
+[share]
+   comment = share folder
+   browseable = yes
+   path = /home/username/share
+   create mask = 0700
+   directory mask = 0700
+   valid users = imhqq
+   force user = imhqq
+   force group = imhqq
+   public = yes
+   available = yes
+   writable = yes
+```
+
 
 
 
