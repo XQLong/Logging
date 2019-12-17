@@ -25,6 +25,8 @@ sudo apt-get dist-upgrade
 sudo apt-get install samba samba-common
 ```
 
+
+
 - 用户home目录下创建共享文件夹
 创建file_share目录，右键属性对其进行共享并勾选其相应的权限。
 
