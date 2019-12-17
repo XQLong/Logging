@@ -35,10 +35,12 @@ sudo apt-get install samba samba-common
 ```
 sudo chmod 777 /home/imhqq/share
 ```
-- 添加用户
-```sudo smbpasswd -a imhqq
-
+- 添加用户，设置密码
 ```
+sudo smbpasswd -a imhqq
+```
+- 配置samba的配置文件
+
 
 
 ## win10映射网络驱动器
