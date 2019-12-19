@@ -49,6 +49,6 @@ catkin_create_pkg my_robot_name_2dnav move_base my_tf_configuration_dep my_odom_
 
 使用两个地图存储障碍物信息，一张在整个环境中创建长期的路径规划，另一个用于局部路径规划与避障。
 
-#### 局部配置
+#### 本地地图基本配置
 
 
