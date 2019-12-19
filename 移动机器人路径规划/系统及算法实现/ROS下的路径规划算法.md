@@ -51,4 +51,4 @@ catkin_create_pkg my_robot_name_2dnav move_base my_tf_configuration_dep my_odom_
 
 #### 本地地图基本配置
 
-#### 
+#### Creating a Launch File for the Navigation Stack
