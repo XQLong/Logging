@@ -31,9 +31,11 @@ TF是一个让用户随时间跟踪多个坐标系的功能包，它使用树型
 
 navigation功能包从里程计和传感器数据流获取信息，并将速度命令发送给移动基站（比如你的机器人）。使用导航功能包集的先决条件是，机器人必须运行ROS，有一个tf变换树，使用正确的ROS消息类型发布传感器数据。而且，我们需要在高层为一个具有一定形状和动力学特点的机器人配置导航功能包集。
 
-### navigation功能包设置
+### navigation功能包配置和使用
 
-#### 创建功能包
+
+
+##### 创建功能包
 
 创建一个功能包，保存所有的配置文件和启动文件，包含所有用于实现导航功的所有能所需要的依赖。
 
@@ -41,18 +43,16 @@ navigation功能包从里程计和传感器数据流获取信息，并将速度�
 catkin_create_pkg my_robot_name_2dnav move_base my_tf_configuration_dep my_odom_configuration_dep my_sensor_configuration_dep
 ```
 
-#### 创建机器人启动配置文件
+##### 创建机器人启动配置文件
 
 现在我们有一个工作空间用于我们所有的配置和启动文件，我们将创建一个roslaunch文件，它将启动所有硬件和发布机器人需要TF变换。
 
-#### 配置代价地图（local_costmap & global_costmap）
+##### 配置代价地图（local_costmap & global_costmap）
 
 使用两个地图存储障碍物信息，一张在整个环境中创建长期的路径规划，另一个用于局部路径规划与避障。
 
-#### 本地地图基本配置
+##### 本地地图基本配置
 
-#### Creating a Launch File for the Navigation Stack
+##### Creating a Launch File for the Navigation Stack
 
-#### AMCL(自适应蒙特卡洛定位)配置
-
-#### 
+##### AMCL(自适应蒙特卡洛定位)配置
